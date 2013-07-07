@@ -31,16 +31,13 @@ sudo apt-get -y install ubuntu-restricted-extras libavformat-extra-53 libavcodec
 # install git
 sudo apt-get -y install git-core
 
-# install Shutter
-sudo apt-get -y install shutter
-
 # install Skype
 sudo apt-get -y update && sudo apt-get -y install skype
 sudo add-apt-repository -y ppa:skype-wrapper/ppa && sudo apt-get -qq update
 sudo apt-get -y install skype-wrapper
 
 # fix sound in Skype
-#sudo sed -i 's/load-module module-udev-detect.*/& tsched=0/' /etc/pulse/default.pa
+sudo sed -i 's/load-module module-udev-detect.*/& tsched=0/' /etc/pulse/default.pa
 
 # install emacs24
 sudo apt-add-repository -y ppa:cassou/emacs && sudo apt-get update
@@ -104,10 +101,8 @@ chsh -s /bin/zsh
 # install themes, icons
 sudo add-apt-repository -y ppa:webupd8team/themes
 sudo add-apt-repository -y ppa:tiheum/equinox
-sudo add-apt-repository -y ppa:upubuntu-com/nitrux
-sudo add-apt-repository -y ppa:upubuntu-com/icons2
 sudo apt-get update
-sudo apt-get -y install mediterraneannight-gtk-theme faenza-icon-theme faience-icon-theme nitruxos inx-icons
+sudo apt-get -y install mediterraneannight-gtk-theme faenza-icon-theme faience-icon-theme
 
 # checkout and activate dotfiles
 cd $HOME
