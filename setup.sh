@@ -4,8 +4,7 @@
 echo '#!/bin/sh
 LOG=/var/log/trim.log
 echo "*** $(date -R) ***" >> $LOG
-fstrim -v / >> $LOG
-fstrim -v /home >> $LOG' | sudo tee /etc/cron.daily/trim
+fstrim -v / >> $LOG' | sudo tee /etc/cron.daily/trim
 
 # enable MultiArch
 sudo dpkg --add-architecture i386
@@ -13,8 +12,8 @@ sudo dpkg --add-architecture i386
 # add Canonical partner repository
 sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
-# remove Unity Shopping Lens, Unity Music Stores scope, Shotwell, Brasero, Totem, Rhytmbox
-sudo apt-get remove -y unity-lens-shopping unity-scope-musicstores shotwell brasero totem rhytmbox
+# remove unneeded standard software
+sudo apt-get remove -y unity-lens-shopping unity-scope-musicstores shotwell brasero totem rhytmbox empathy
 
 # install tlp
 sudo add-apt-repository -y ppa:linrunner/tlp
@@ -36,6 +35,7 @@ sudo apt-get -y update && sudo apt-get -y install skype
 sudo add-apt-repository -y ppa:skype-wrapper/ppa && sudo apt-get -qq update
 sudo apt-get -y install skype-wrapper
 
+# TODO append only once
 # fix sound in Skype
 sudo sed -i 's/load-module module-udev-detect.*/& tsched=0/' /etc/pulse/default.pa
 
@@ -83,7 +83,7 @@ cp conkeror.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
 # install virtualbox
-sudo apt-get -y virtualbox
+sudo apt-get -y install virtualbox
 
 # install vagrant
 wget -O /tmp/vagrant.deb http://files.vagrantup.com/packages/7e400d00a3c5a0fdf2809c8b5001a035415a607b/vagrant_1.2.2_x86_64.deb
@@ -103,6 +103,11 @@ sudo add-apt-repository -y ppa:webupd8team/themes
 sudo add-apt-repository -y ppa:tiheum/equinox
 sudo apt-get update
 sudo apt-get -y install mediterraneannight-gtk-theme faenza-icon-theme faience-icon-theme
+
+# install variety wallpaper changer
+sudo add-apt-repository -y ppa:peterlevi/ppa
+sudo apt-get update
+sudo apt-get -y install variety
 
 # checkout and activate dotfiles
 cd $HOME
