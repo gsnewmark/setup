@@ -117,3 +117,8 @@ cd $HOME
 git clone --recursive git@github.com:gsnewmark/dotfiles.git
 cd dotfiles
 ./bootstrap
+
+# install and activate node.js using nvm
+source $HOME/.nvm/nvm.sh
+nvm install 0.10
+nvm use 0.10
