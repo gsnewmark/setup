@@ -18,7 +18,7 @@ sudo apt-get remove -y unity-lens-shopping unity-scope-musicstores shotwell bras
 # install tlp
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-get -y update
-sudo apt-get -y install tlp tlp-rdw smartmontools ethtool tp-smapi-dkms acpi-call-tools
+sudo apt-get -y install tlp tlp-rdw smartmontools ethtool
 sudo tlp start
 
 # install Unity Tweak Tool
@@ -108,6 +108,9 @@ sudo apt-get -y install mediterraneannight-gtk-theme faenza-icon-theme faience-i
 sudo add-apt-repository -y ppa:peterlevi/ppa
 sudo apt-get update
 sudo apt-get -y install variety
+
+# install Heroku toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
 
 # checkout and activate dotfiles
 cd $HOME
