@@ -109,6 +109,11 @@ sudo add-apt-repository -y ppa:peterlevi/ppa
 sudo apt-get update
 sudo apt-get -y install variety
 
+# install calibre
+sudo add-apt-repository -y ppa:n-muench/calibre
+sudo apt-get update
+sudo apt-get -y install calibre
+
 # install Heroku toolbelt
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
 
@@ -118,7 +123,6 @@ git clone --recursive git@github.com:gsnewmark/dotfiles.git
 cd dotfiles
 ./bootstrap
 
-# install and activate node.js using nvm
+# install node.js using nvm
 source $HOME/.nvm/nvm.sh
 nvm install 0.10
-nvm use 0.10
