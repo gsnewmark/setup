@@ -24,8 +24,11 @@ sudo tlp start
 # install Unity Tweak Tool
 sudo apt-get -y install unity-tweak-tool
 
-# install codecs, Java
-sudo apt-get -y install ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53 icedtea-7-plugin openjdk-7-jre openjdk-7-jdk
+# install codecs, Java, some libraries
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53 icedtea-7-plugin openjdk-7-jre openjdk-7-jdk
+
+# install Maven
+sudo apt-get -y install maven
 
 # install git
 sudo apt-get -y install git-core
@@ -85,9 +88,10 @@ update-desktop-database ~/.local/share/applications
 # install virtualbox
 sudo apt-get -y install virtualbox
 
-# install vagrant
+# install vagrant + vagrant-omnibus
 wget -O /tmp/vagrant.deb http://files.vagrantup.com/packages/7e400d00a3c5a0fdf2809c8b5001a035415a607b/vagrant_1.2.2_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb
+vagrant plugin install vagrant-omnibus
 
 # install leiningen
 mkdir -p ~/bin
@@ -114,15 +118,34 @@ sudo add-apt-repository -y ppa:n-muench/calibre
 sudo apt-get update
 sudo apt-get -y install calibre
 
-# install Heroku toolbelt
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
-
 # checkout and activate dotfiles
 cd $HOME
 git clone --recursive git@github.com:gsnewmark/dotfiles.git
 cd dotfiles
 ./bootstrap
 
-# install node.js using nvm
-source $HOME/.nvm/nvm.sh
+# install nvm
+git clone git://github.com/creationix/nvm.git ~/.nvm
+
+# install rbenv + ruby-build
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# install Heroku toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
+
+# install Ruby and Node.js
+exec $SHELL -l
+rbenv install 2.0.0-p247
+rbenv rehash
+rbenv global 2.0.0-p247
 nvm install 0.10
+
+# install bundler
+gem install bundler
+
+# install and configure chef
+gem install bundler chef knife-solo librarian-chef
+rbenv rehash
+knife configure --defaults
+ssh-keygen -f ~/.chef/$USER.pem
