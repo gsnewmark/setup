@@ -25,13 +25,13 @@ sudo tlp start
 sudo apt-get -y install unity-tweak-tool
 
 # install codecs, Java, some libraries
-sudo apt-get -y install build-essential zlib1g-dev libssl-dev ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53 icedtea-7-plugin openjdk-7-jre openjdk-7-jdk
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53 icedtea-7-plugin openjdk-7-jre openjdk-7-jdk openjdk-7-jdk-doc openjdk-6-jdk openjdk-6-jdk-doc
 
 # install Maven
 sudo apt-get -y install maven
 
 # install git
-sudo apt-get -y install git-core
+sudo apt-get -y install git
 
 # install Skype
 sudo apt-get -y update && sudo apt-get -y install skype
@@ -117,6 +117,9 @@ sudo apt-get -y install variety
 sudo add-apt-repository -y ppa:n-muench/calibre
 sudo apt-get update
 sudo apt-get -y install calibre
+
+# install byobu, htop
+sudo apt-get -y install byobu htop
 
 # checkout and activate dotfiles
 cd $HOME
