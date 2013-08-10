@@ -128,8 +128,8 @@ sudo add-apt-repository -y ppa:happy-neko/ps3mediaserver
 sudo apt-get update
 sudo apt-get -y install ps3mediaserver
 
-# install byobu, htop
-sudo apt-get -y install byobu htop
+# install htop
+sudo apt-get -y install htop
 
 # checkout and activate dotfiles
 cd $HOME
