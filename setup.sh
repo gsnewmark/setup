@@ -72,6 +72,11 @@ sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo apt-get update
 sudo apt-get -y install clementine
 
+# install nuvola
+sudo add-apt-repository -y ppa:nuvola-player-builders/beta
+sudo apt-get update
+sudo apt-get -y install nuvolaplayer
+
 # install audacious
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
 sudo apt-get update
