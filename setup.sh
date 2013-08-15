@@ -55,7 +55,9 @@ sudo apt-get -y install emacs24
 sudo apt-get -y install vim-gnome vim
 
 # install wine
-sudo apt-get -y install wine
+sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo apt-get update
+sudo apt-get install wine1.6 winetricks
 
 # install nemo (+ dropbox) and make it default file manager
 sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-stable
