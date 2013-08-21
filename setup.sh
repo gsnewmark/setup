@@ -51,6 +51,13 @@ sudo sed -i 's/load-module module-udev-detect.*/& tsched=0/' /etc/pulse/default.
 sudo apt-add-repository -y ppa:cassou/emacs && sudo apt-get update
 sudo apt-get -y install emacs24
 
+# install texlive
+sudo apt-get -y install texlive-full
+
+# http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard
+# install compiz config and plugins
+sudo apt-get -y install compizconfig-settings-manager compiz-plugins
+
 # install vim
 sudo apt-get -y install vim-gnome vim
 
