@@ -148,19 +148,6 @@ sudo apt-get -y install ps3mediaserver
 # install htop
 sudo apt-get -y install htop
 
-# install Scala
-wget http://www.scala-lang.org/files/archive/scala-2.11.0-M4.tgz
-tar zxf scala-2.11.0-M4.tgz
-sudo mv scala-2.11.0-M4 /usr/share/scala
-rm -rf scala-2.11.0-M4 scala-2.11.0-M4.tgz
-sudo ln -s /usr/share/scala/bin/scala /usr/bin/scala
-sudo ln -s /usr/share/scala/bin/scalac /usr/bin/scalac
-sudo ln -s /usr/share/scala/bin/fsc /usr/bin/fsc
-sudo ln -s /usr/share/scala/bin/sbaz /usr/bin/sbaz
-sudo ln -s /usr/share/scala/bin/sbaz-setup /usr/bin/sbaz-setup
-sudo ln -s /usr/share/scala/bin/scaladoc /usr/bin/scaladoc
-sudo ln -s /usr/share/scala/bin/scalap /usr/bin/scalap
-
 # install sbt
 wget http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt//0.12.4/sbt.deb
 sudo dpkg -i sbt.deb
