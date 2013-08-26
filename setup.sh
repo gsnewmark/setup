@@ -145,6 +145,9 @@ sudo add-apt-repository -y ppa:happy-neko/ps3mediaserver
 sudo apt-get update
 sudo apt-get -y install ps3mediaserver
 
+# install cheese
+sudo apt-get -y install cheese
+
 # install htop
 sudo apt-get -y install htop
 
