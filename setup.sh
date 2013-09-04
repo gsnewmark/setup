@@ -25,7 +25,7 @@ sudo tlp start
 sudo apt-get -y install unity-tweak-tool
 
 # install codecs, Java, some libraries
-sudo apt-get -y install build-essential zlib1g-dev libssl-dev ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53 icedtea-7-plugin openjdk-7-jre openjdk-7-jdk openjdk-7-jdk-doc openjdk-6-jdk openjdk-6-jdk-doc
+sudo apt-get -y install build-essential zlib1g-dev libldap2-dev libsasl2-dev libssl-dev ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53 icedtea-7-plugin openjdk-7-jre openjdk-7-jdk openjdk-7-jdk-doc openjdk-6-jdk openjdk-6-jdk-doc
 
 # install java font fix
 sudo add-apt-repository -y ppa:no1wantdthisname/openjdk-fontfix
