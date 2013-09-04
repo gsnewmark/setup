@@ -158,6 +158,11 @@ sudo apt-get update
 sudo apt-get -y install sbt
 rm -rf sbt.deb
 
+# install python's setuptools, pip, virtualenv
+sudo apt-get -y install python-setuptools python-dev build-essential
+sudo easy_install pip
+sudo pip install virtualenv virtualenvwrapper
+
 # checkout and activate dotfiles
 cd $HOME
 git clone --recursive git@github.com:gsnewmark/dotfiles.git
