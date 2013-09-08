@@ -130,10 +130,8 @@ sudo add-apt-repository -y ppa:tiheum/equinox
 sudo apt-get update
 sudo apt-get -y install mediterraneannight-gtk-theme faenza-icon-theme faience-icon-theme
 
-# install variety wallpaper changer
-sudo add-apt-repository -y ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get -y install variety
+# install wallch wallpaper changer
+sudo apt-get -y install wallch
 
 # install calibre
 sudo add-apt-repository -y ppa:n-muench/calibre
