@@ -143,6 +143,12 @@ sudo add-apt-repository -y ppa:n-muench/calibre
 sudo apt-get update
 sudo apt-get -y install calibre
 
+# install Rockbox Utility
+wget http://download.rockbox.org/rbutil/linux/RockboxUtility-v1.3.1-64bit.tar.bz2
+tar -jxf RockboxUtility-v1.3.1-64bit.tar.bz2
+mv RockboxUtility-v1.3.1-64bit/RockboxUtility ~/bin
+rm -rf RockboxUtility-v1.3.1-64bit.tar.bz2 RockboxUtility-v1.3.1-64bit
+
 # install ps3 media server
 sudo add-apt-repository -y ppa:happy-neko/ps3mediaserver
 sudo apt-get update
