@@ -197,3 +197,8 @@ gem install bundler chef knife-solo librarian-chef
 rbenv rehash
 knife configure --defaults
 ssh-keygen -f ~/.chef/$USER.pem
+
+# install Solarized profile for Gnome Terminal
+cd gnome-terminal-colors-solarized
+./solarize dark -p SolarizedDark
+./solarize light -p SolarizedLight
