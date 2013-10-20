@@ -45,6 +45,11 @@ sudo apt-get install -y nautilus-dropbox
 # show dropbox indicator
 sudo apt-get install -y libappindicator1
 
+# weather indicator
+sudo add-apt-repository -y ppa:atareao/atareao
+sudo apt-get update
+sudo apt-get install -y my-weather-indicator
+
 # http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard
 # install compiz config and plugins
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins
