@@ -14,8 +14,7 @@ sudo add-apt-repository -y ppa:webupd8team/themes
 sudo add-apt-repository -y ppa:snwh/moka-icon-theme-daily
 sudo add-apt-repository -y ppa:noobslab/themes
 sudo apt-get update
-sudo apt-get install -y mediterraneannight-gtk-theme shimmer-themes
- flatstudio moka-icon-theme moka-icon-theme-dark moka-icon-theme-blue 
+sudo apt-get install -y mediterraneannight-gtk-theme shimmer-themes flatstudio moka-icon-theme moka-icon-theme-dark moka-icon-theme-blue 
 
 # install Variety wallpaper changer
 sudo add-apt-repository -y ppa:peterlevi/ppa
