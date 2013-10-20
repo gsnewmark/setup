@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install Java
-sudo apt-get install -y java-common openjdk-7-jre openjdk-7-jdk openjdk-7-doc openjdk-6-jre openjdk-6-jdk openjdk-6-doc
+sudo apt-get install -y java-common openjdk-7-jre openjdk-7-jdk openjdk-7-doc openjdk-6-jre openjdk-6-jdk openjdk-6-doc maven
 
 # install Leiningen
 mkdir -p ~/bin
@@ -9,13 +9,10 @@ wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
 chmod a+x ~/bin/lein
 
 # install sbt
-wget -O /tmp/sbt.deb http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt//0.12.4/sbt.deb
+wget -O /tmp/sbt.deb http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt//0.13.0/sbt.deb
 sudo dpkg -i /tmp/sbt.deb
 sudo apt-get update
 sudo apt-get install -y sbt
-
-# install Maven
-sudo apt-get install -y maven
 
 # install Python, setuptools, pip, virtualenv
 sudo apt-get install -y python python-setuptools python-dev
