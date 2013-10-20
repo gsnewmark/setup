@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install some libs
-sudo apt-get install -y build-essential zlib1g zlib1g-dev openssl libssl-dev
+sudo apt-get install -y build-essential zlib1g zlib1g-dev openssl libssl-dev aspell-uk aspell-en
 
 # install zsh and set it as default shell
 sudo apt-get install -y zsh
