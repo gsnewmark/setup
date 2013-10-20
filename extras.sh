@@ -53,3 +53,9 @@ sudo apt-get install -y my-weather-indicator
 # http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard
 # install compiz config and plugins
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins
+
+# install Steam
+wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
+sudo dpkg -i /tmp/steam.deb
+sudo apt-get update
+sudo apt-get install steam jockey-common nvidia-common python-xkit
