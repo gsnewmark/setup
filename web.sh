@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # add Canonical partner repository
-sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo add-apt-repository -y "deb http://archive.canonical.com/ precise partner"
 
 # install conkeror
 sudo apt-key adv --keyserver pgp.uni-mainz.de --recv-keys 0F84088E
@@ -13,15 +13,18 @@ mkdir -p ~/.local/share/applications
 cp conkeror.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
-# install chromium
+# install chromium, firefox, transmission
 sudo apt-get install -y chromium-browser
+
+# install firefox
+sudo apt-get install -y firefox 
+
+# install transmission
+sudo add-apt-repository -y ppa:transmissionbt/ppa && sudo apt-get update
+sudo apt-get install -y transmission
 
 # install Skype
 sudo apt-get -y update && sudo apt-get install -y skype
-
-# install Skype-wrapper
-sudo add-apt-repository -y ppa:skype-wrapper/ppa && sudo apt-get -qq update
-sudo apt-get install -y skype-wrapper
 
 # TODO append only once
 # fix sound in Skype

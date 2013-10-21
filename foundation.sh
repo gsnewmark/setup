@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# update kernel and xorg
+sudo apt-get update
+sudo apt-get install -y linux-generic-lts-raring xserver-xorg-lts-raring
+
 # install some libs
 sudo apt-get install -y build-essential zlib1g zlib1g-dev openssl libssl-dev aspell-uk aspell-en
 
@@ -8,7 +12,8 @@ sudo apt-get install -y zsh
 chsh -s /bin/zsh
 
 # install useful utils
-sudo apt-get install -y htop curl wget git
+sudo apt-add-repository -y ppa:git-core/ppa && sudo apt-get update
+sudo apt-get install -y htop curl wget git xterm
 
 # install emacs24
 sudo apt-add-repository -y ppa:cassou/emacs && sudo apt-get update

@@ -7,7 +7,7 @@ echo "*** $(date -R) ***" >> $LOG
 fstrim -v / >> $LOG' | sudo tee /etc/cron.daily/trim
 
 # remove unneeded standard software
-sudo apt-get remove -y shotwell brasero totem rhythmbox empathy
+sudo apt-get remove -y shotwell brasero totem empathy
 
 # install tlp
 sudo add-apt-repository -y ppa:linrunner/tlp
@@ -28,45 +28,38 @@ sudo apt-get install -y wine
 # install Arduino tools
 sudo apt-get -y install arduino arduino-core
 
-# install Solarized profile for Gnome Terminal
-cd gnome-terminal-colors-solarized
-./solarize dark -p SolarizedDark
-./solarize light -p SolarizedLight
+# add elementary community ppa
+sudo add-apt-repository -y ppa:versable/elementary-update && sudo apt-get update
 
-# install Unity Tweak Tool
-sudo apt-get install -y unity-tweak-tool
-
-# quick preview for nautilus
-sudo apt-get install -y gnome-sushi unoconv
-
-# dropbox integtation for nautilus
-sudo apt-get install -y nautilus-dropbox
-
-# show dropbox indicator
-sudo apt-get install -y libappindicator1
-
-# weather indicator
-sudo add-apt-repository -y ppa:atareao/atareao
-sudo apt-get update
-sudo apt-get install -y my-weather-indicator
+# install elementart tweaks
+sudo apt-get install -y elementary-tweaks
 
 # http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard
 # install compiz config and plugins
-sudo apt-get install -y compizconfig-settings-manager compiz-plugins
+#sudo apt-get install -y compizconfig-settings-manager compiz-plugins
+
+# install themes, icons
+sudo apt-get install -y elementary-dark-theme 
+sudo apt-get install -y elementary-elfaenza-icons elementary-nitrux-icons elementary-enumix-utouch-icons elementary-taprevival-icons elementary-thirdparty-icons
+sudo apt-get install -y elementary-plank-themes
+sudo apt-get install -y elementary-wallpaper-collection
+
+# install twitter app
+sudo apt-get install -y birdie-granite
+
+# install wingpanel slim
+sudo apt-get install -y wingpanel-slim
+
+# install indicator synapse
+sudo apt-get install -y indicator-synapse
+
+# install Variety wallpaper changer
+#sudo add-apt-repository -y ppa:peterlevi/ppa
+#sudo apt-get update
+#sudo apt-get install -y variety
 
 # install Steam
 wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
 sudo dpkg -i /tmp/steam.deb
 sudo apt-get update
 sudo apt-get install steam jockey-common nvidia-common python-xkit
-
-# install themes, icons
-sudo add-apt-repository -y ppa:webupd8team/themes
-sudo add-apt-repository -y ppa:snwh/moka-icon-theme-daily
-sudo apt-get update
-sudo apt-get install -y mediterraneannight-gtk-theme moka-icon-theme-blue
-
-# install Variety wallpaper changer
-sudo add-apt-repository -y ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get install -y variety
