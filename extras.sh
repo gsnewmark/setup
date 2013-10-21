@@ -57,9 +57,9 @@ sudo apt-get install -y indicator-synapse
 sudo apt-get install pantheon-files-plugin-dropbox
 
 # install Variety wallpaper changer
-#sudo add-apt-repository -y ppa:peterlevi/ppa
-#sudo apt-get update
-#sudo apt-get install -y variety
+sudo add-apt-repository -y ppa:peterlevi/ppa
+sudo apt-get update
+sudo apt-get install -y variety
 
 # do not show bluetooth indicator
 gsettings set com.canonical.indicator.bluetooth visible false

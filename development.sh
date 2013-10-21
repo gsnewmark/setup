@@ -15,7 +15,7 @@ sudo apt-get update
 sudo apt-get install -y sbt
 
 # install Python, setuptools, pip, virtualenv
-sudo apt-get install -y python python-setuptools python-dev
+sudo apt-get install -y python python3 python-setuptools python-dev
 sudo easy_install pip
 sudo pip install virtualenv
 
