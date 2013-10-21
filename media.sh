@@ -9,17 +9,6 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install -y vlc clementine audacious audacious-plugins
 
-# install themes, icons
-sudo add-apt-repository -y ppa:webupd8team/themes
-sudo add-apt-repository -y ppa:snwh/moka-icon-theme-daily
-sudo apt-get update
-sudo apt-get install -y mediterraneannight-gtk-theme moka-icon-theme-blue
-
-# install Variety wallpaper changer
-sudo add-apt-repository -y ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get install -y variety
-
 # install Calibre
 sudo add-apt-repository -y ppa:n-muench/calibre
 sudo apt-get update

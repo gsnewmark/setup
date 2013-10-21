@@ -59,3 +59,14 @@ wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
 sudo dpkg -i /tmp/steam.deb
 sudo apt-get update
 sudo apt-get install steam jockey-common nvidia-common python-xkit
+
+# install themes, icons
+sudo add-apt-repository -y ppa:webupd8team/themes
+sudo add-apt-repository -y ppa:snwh/moka-icon-theme-daily
+sudo apt-get update
+sudo apt-get install -y mediterraneannight-gtk-theme moka-icon-theme-blue
+
+# install Variety wallpaper changer
+sudo add-apt-repository -y ppa:peterlevi/ppa
+sudo apt-get update
+sudo apt-get install -y variety
