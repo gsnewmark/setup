@@ -23,3 +23,6 @@ rm -rf RockboxUtility-v1.3.1-64bit.tar.bz2 RockboxUtility-v1.3.1-64bit
 
 # install Cheese
 sudo apt-get install -y cheese
+
+# install document/image viewers
+sudo apt-get install -y evince eog eog-plugins

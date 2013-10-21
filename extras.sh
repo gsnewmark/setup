@@ -39,8 +39,8 @@ sudo apt-get install -y elementary-tweaks
 #sudo apt-get install -y compizconfig-settings-manager compiz-plugins
 
 # install themes, icons
-sudo apt-get install -y elementary-dark-theme 
-sudo apt-get install -y elementary-elfaenza-icons elementary-nitrux-icons elementary-enumix-utouch-icons elementary-taprevival-icons elementary-thirdparty-icons
+sudo apt-get install -y elementary-dark-theme
+sudo apt-get install -y elementary-elfaenza-icons elementary-enumix-utouch-icons elementary-thirdparty-icons
 sudo apt-get install -y elementary-plank-themes
 sudo apt-get install -y elementary-wallpaper-collection
 
@@ -52,6 +52,9 @@ sudo apt-get install -y wingpanel-slim
 
 # install indicator synapse
 sudo apt-get install -y indicator-synapse
+
+# integrate dropbox
+sudo apt-get install pantheon-files-plugin-dropbox
 
 # install Variety wallpaper changer
 #sudo add-apt-repository -y ppa:peterlevi/ppa

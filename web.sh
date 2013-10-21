@@ -17,7 +17,7 @@ update-desktop-database ~/.local/share/applications
 sudo apt-get install -y chromium-browser
 
 # install firefox
-sudo apt-get install -y firefox 
+sudo apt-get install -y firefox
 
 # install transmission
 sudo add-apt-repository -y ppa:transmissionbt/ppa && sudo apt-get update
@@ -32,3 +32,7 @@ sudo sed -i 's/load-module module-udev-detect.*/& tsched=0/' /etc/pulse/default.
 
 # install Java browser plugin
 sudo apt-get -y install icedtea-7-plugin
+
+# install Dropbox
+wget -O /tmp/dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
+sudo dpkg -i /tmp/dropbox.deb
