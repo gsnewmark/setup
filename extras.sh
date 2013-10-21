@@ -61,6 +61,9 @@ sudo apt-get install pantheon-files-plugin-dropbox
 #sudo apt-get update
 #sudo apt-get install -y variety
 
+# do not show bluetooth indicator
+gsettings set com.canonical.indicator.bluetooth visible false
+
 # install Steam
 wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
 sudo dpkg -i /tmp/steam.deb
