@@ -24,7 +24,7 @@ sudo add-apt-repository -y ppa:transmissionbt/ppa && sudo apt-get update
 sudo apt-get install -y transmission
 
 # install Skype
-sudo apt-get -y update && sudo apt-get install -y skype
+sudo apt-get update && sudo apt-get install -y skype
 
 # TODO append only once
 # fix sound in Skype

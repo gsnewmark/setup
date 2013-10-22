@@ -64,6 +64,9 @@ sudo apt-get install -y variety
 # do not show bluetooth indicator
 gsettings set com.canonical.indicator.bluetooth visible false
 
+# install qtconfig to change Skype's font
+sudo apt-get install -y qt4-qtconfig
+
 # install Steam
 wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
 sudo dpkg -i /tmp/steam.deb
