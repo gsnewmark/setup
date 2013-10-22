@@ -67,8 +67,14 @@ gsettings set com.canonical.indicator.bluetooth visible false
 # install qtconfig to change Skype's font
 sudo apt-get install -y qt4-qtconfig
 
+# install Libre office
+sudo apt-get install -y libreoffice
+
 # install Steam
 wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
 sudo dpkg -i /tmp/steam.deb
 sudo apt-get update
 sudo apt-get install steam jockey-common nvidia-common python-xkit
+
+# updated X.org
+sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
