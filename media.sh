@@ -26,3 +26,6 @@ sudo apt-get install -y cheese
 
 # install document/image viewers
 sudo apt-get install -y evince eog eog-plugins
+
+# install GIMP
+sudo apt-get install -y gimp
