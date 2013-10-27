@@ -13,11 +13,11 @@ mkdir -p ~/.local/share/applications
 cp conkeror.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
-# install chromium, firefox, transmission
+# install chromium
 sudo apt-get install -y chromium-browser
 
-# install firefox
-sudo apt-get install -y firefox
+# install firefox, thunderbird
+sudo apt-get install -y firefox thunderbird
 
 # install transmission
 sudo add-apt-repository -y ppa:transmissionbt/ppa && sudo apt-get update
