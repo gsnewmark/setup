@@ -39,8 +39,8 @@ sudo apt-get install -y elementary-tweaks
 #sudo apt-get install -y compizconfig-settings-manager compiz-plugins
 
 # install themes, icons
-sudo apt-get install -y elementary-dark-theme
-sudo apt-get install -y elementary-elfaenza-icons elementary-enumix-utouch-icons elementary-thirdparty-icons
+sudo apt-get install -y elementary-dark-theme elementary-colors-theme
+sudo apt-get install -y elementary-elfaenza-icons elementary-thirdparty-icons
 sudo apt-get install -y elementary-plank-themes
 sudo apt-get install -y elementary-wallpaper-collection
 
