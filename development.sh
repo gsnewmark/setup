@@ -3,6 +3,9 @@
 # install Java
 sudo apt-get install -y java-common openjdk-7-jre openjdk-7-jdk openjdk-7-doc openjdk-6-jre openjdk-6-jdk openjdk-6-doc maven
 
+# use Java 7 as default
+sudo update-java-alternatives -s java-1.7.0-openjdk-amd64
+
 # install Leiningen
 mkdir -p ~/bin
 wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
