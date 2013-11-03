@@ -36,3 +36,8 @@ sudo apt-get -y install icedtea-7-plugin
 # install Dropbox
 wget -O /tmp/dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
 sudo dpkg -i /tmp/dropbox.deb
+
+# install SopCast player
+sudo add-apt-repository -y ppa:ferramroberto/sopcast
+sudo apt-get update
+sudo apt-get install -y sopcast-player
