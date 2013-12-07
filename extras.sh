@@ -34,18 +34,11 @@ sudo add-apt-repository -y ppa:versable/elementary-update && sudo apt-get update
 # install elementart tweaks
 sudo apt-get install -y elementary-tweaks
 
-# http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard
-# install compiz config and plugins
-#sudo apt-get install -y compizconfig-settings-manager compiz-plugins
-
 # install themes, icons
 sudo apt-get install -y elementary-dark-theme elementary-colors-theme
 sudo apt-get install -y elementary-elfaenza-icons elementary-thirdparty-icons
 sudo apt-get install -y elementary-plank-themes
 sudo apt-get install -y elementary-wallpaper-collection
-
-# install twitter app
-sudo apt-get install -y birdie-granite
 
 # install wingpanel slim
 sudo apt-get install -y wingpanel-slim
@@ -69,6 +62,9 @@ sudo apt-get install -y qt4-qtconfig
 
 # install Libre office
 sudo apt-get install -y libreoffice
+
+# install unclutter (hides mouse cursor)
+sudo apt-get install -y unclutter
 
 # install Steam
 wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb

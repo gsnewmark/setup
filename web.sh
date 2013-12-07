@@ -3,7 +3,7 @@
 # add Canonical partner repository
 sudo add-apt-repository -y "deb http://archive.canonical.com/ precise partner"
 
-# install conkeror
+# install Conkeror
 sudo apt-key adv --keyserver pgp.uni-mainz.de --recv-keys 0F84088E
 echo 'deb     http://noone.org/conkeror-nightly-debs sid main
 deb-src http://noone.org/conkeror-nightly-debs sid main' | sudo tee -a /etc/apt/sources.list
@@ -13,13 +13,13 @@ mkdir -p ~/.local/share/applications
 cp conkeror.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
-# install chromium
+# install Chromium
 sudo apt-get install -y chromium-browser
 
-# install firefox, thunderbird
+# install Firefox, Thunderbird
 sudo apt-get install -y firefox thunderbird
 
-# install transmission
+# install Transmission
 sudo add-apt-repository -y ppa:transmissionbt/ppa && sudo apt-get update
 sudo apt-get install -y transmission
 

@@ -12,7 +12,7 @@ wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
 chmod a+x ~/bin/lein
 
 # install sbt
-wget -O /tmp/sbt.deb http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt//0.13.0/sbt.deb
+wget -O /tmp/sbt.deb http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.0/sbt.deb
 sudo dpkg -i /tmp/sbt.deb
 sudo apt-get update
 sudo apt-get install -y sbt
@@ -41,3 +41,14 @@ gem install bundler
 
 # install Heroku toolbelt
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
+
+# install Virtualbox
+sudo apt-get install dkms
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+sudo apt-get update
+sudo apt-get install -y virtualbox-4.2
+
+# install Vagrant
+wget -O /tmp/vagrant.deb http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/vagrant_1.3.5_x86_64.deb
+sudo dpkg -i /tmp/vagrant.deb
