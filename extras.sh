@@ -66,6 +66,9 @@ sudo apt-get install -y libreoffice
 # install unclutter (hides mouse cursor)
 sudo apt-get install -y unclutter
 
+# install disk manager
+sudo apt-get install -y gnome-disk-utility
+
 # install Steam
 wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
 sudo dpkg -i /tmp/steam.deb
