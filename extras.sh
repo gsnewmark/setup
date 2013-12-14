@@ -6,6 +6,10 @@ LOG=/var/log/trim.log
 echo "*** $(date -R) ***" >> $LOG
 fstrim -v / >> $LOG' | sudo tee /etc/cron.daily/trim
 
+# TODO append only once
+# fix sound in Skype and volume control for DragonFly
+sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
+
 # remove unneeded standard software
 sudo apt-get remove -y shotwell brasero totem empathy
 

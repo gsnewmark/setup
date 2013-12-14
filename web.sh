@@ -26,10 +26,6 @@ sudo apt-get install -y transmission
 # install Skype
 sudo apt-get update && sudo apt-get install -y skype
 
-# TODO append only once
-# fix sound in Skype
-sudo sed -i 's/load-module module-udev-detect.*/& tsched=0/' /etc/pulse/default.pa
-
 # install Java browser plugin
 sudo apt-get -y install icedtea-7-plugin
 
