@@ -50,5 +50,5 @@ sudo apt-get update
 sudo apt-get install -y virtualbox-4.2
 
 # install Vagrant
-wget -O /tmp/vagrant.deb http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/vagrant_1.3.5_x86_64.deb
+wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.1_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb

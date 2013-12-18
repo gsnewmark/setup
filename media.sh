@@ -6,6 +6,7 @@ sudo apt-get -y install ubuntu-restricted-extras libavformat-extra-53 libavcodec
 # install players
 sudo add-apt-repository -y ppa:n-muench/vlc
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo apt-get update
 sudo apt-get install -y vlc clementine audacious audacious-plugins
 
