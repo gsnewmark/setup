@@ -79,5 +79,10 @@ sudo dpkg -i /tmp/steam.deb
 sudo apt-get update
 sudo apt-get install steam jockey-common nvidia-common python-xkit
 
+# install f.lux
+sudo add-apt-repository -y ppa:kilian/f.lux
+sudo apt-get update
+sudo apt-get -y install fluxgui
+
 # updated X.org
 sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
