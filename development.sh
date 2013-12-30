@@ -52,3 +52,10 @@ sudo apt-get install -y virtualbox-4.2
 # install Vagrant
 wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.1_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb
+
+# install PhantomJS
+sudo wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2 -O /usr/local/share/phantomjs.tar.bz2
+cd /usr/local/share/
+sudo tar xjf phantomjs.tar.bz2
+sudo ln -s /usr/local/share/phantomjs-1.9.2-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+sudo rm /usr/local/share/phantomjs.tar.bz2
