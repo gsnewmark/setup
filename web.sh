@@ -37,3 +37,12 @@ sudo dpkg -i /tmp/dropbox.deb
 sudo add-apt-repository -y ppa:ferramroberto/sopcast
 sudo apt-get update
 sudo apt-get install -y sopcast-player
+
+# install xulrunner
+FFVER=`grep -Po  "\d{2}\.\d+" /usr/lib/firefox/platform.ini`
+ARCH=`uname -p`
+XURL=https://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/$FFVER/runtimes/xulrunner-$FFVER.en-US.linux-$ARCH.tar.bz2
+cd /opt
+sudo sh -c "wget -O- $XURL | tar -xj"
+sudo ln -s /opt/xulrunner/xulrunner /usr/bin/xulrunner
+sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
