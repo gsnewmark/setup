@@ -84,5 +84,10 @@ sudo add-apt-repository -y ppa:kilian/f.lux
 sudo apt-get update
 sudo apt-get -y install fluxgui
 
+# install TrueCrypt
+sudo add-apt-repository ppa:stefansundin/truecrypt
+sudo apt-get update
+sudo apt-get install truecrypt
+
 # updated X.org
 sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
