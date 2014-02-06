@@ -55,12 +55,6 @@ sudo apt-add-repository -y ppa:heathbar/super-wingpanel-daily
 sudo apt-get update
 sudo apt-get install -y super-wingpanel
 
-# install indicator appmenu
-sudo apt-get install -y indicator-appmenu
-
-# enable global menu
-gsettings set org.pantheon.desktop.wingpanel blacklist "[]"
-
 # install indicator synapse
 sudo apt-get install -y indicator-synapse
 
