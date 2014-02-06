@@ -32,6 +32,9 @@ sudo apt-get install -y wine
 # install Arduino tools
 sudo apt-get -y install arduino arduino-core
 
+# install dconf-tools
+sudo apt-get install dconf-tools
+
 # add elementary community ppa
 sudo add-apt-repository -y ppa:versable/elementary-update && sudo apt-get update
 
@@ -44,8 +47,16 @@ sudo apt-get install -y elementary-elfaenza-icons elementary-thirdparty-icons
 sudo apt-get install -y elementary-plank-themes
 sudo apt-get install -y elementary-wallpaper-collection
 
-# install wingpanel slim
-sudo apt-get install -y wingpanel-slim
+# install super-wingpanel
+sudo apt-add-repository -y ppa:heathbar/super-wingpanel
+sudo apt-get update
+sudo apt-get install -y super-wingpanel
+
+# install indicator appmenu
+sudo apt-get install -y indicator-appmenu
+
+# enable global menu
+gsettings set org.pantheon.desktop.wingpanel blacklist "[]"
 
 # install indicator synapse
 sudo apt-get install -y indicator-synapse
