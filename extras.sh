@@ -51,7 +51,7 @@ sudo apt-get install -y elementary-wallpaper-collection
 sudo apt-get install -y maximus
 
 # install super-wingpanel
-sudo apt-add-repository -y ppa:heathbar/super-wingpanel
+sudo apt-add-repository -y ppa:heathbar/super-wingpanel-daily
 sudo apt-get update
 sudo apt-get install -y super-wingpanel
 
