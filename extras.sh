@@ -47,6 +47,9 @@ sudo apt-get install -y elementary-elfaenza-icons elementary-thirdparty-icons
 sudo apt-get install -y elementary-plank-themes
 sudo apt-get install -y elementary-wallpaper-collection
 
+# install maximus
+sudo apt-get install -y maximus
+
 # install super-wingpanel
 sudo apt-add-repository -y ppa:heathbar/super-wingpanel
 sudo apt-get update
