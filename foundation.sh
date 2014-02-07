@@ -13,7 +13,7 @@ chsh -s /bin/zsh
 
 # install useful utils
 sudo apt-add-repository -y ppa:git-core/ppa && sudo apt-get update
-sudo apt-get install -y htop curl wget git xterm links xclip
+sudo apt-get install -y htop curl wget git xterm links xclip tmux byobu
 
 # install emacs24
 sudo apt-add-repository -y ppa:cassou/emacs && sudo apt-get update
