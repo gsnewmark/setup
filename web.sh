@@ -46,3 +46,8 @@ cd /opt
 sudo sh -c "wget -O- $XURL | tar -xj"
 sudo ln -s /opt/xulrunner/xulrunner /usr/bin/xulrunner
 sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
+
+# install Mosh
+sudo add-apt-repository -y ppa:keithw/mosh
+sudo apt-get update
+sudo apt-get install -y mosh

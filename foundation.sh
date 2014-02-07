@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y linux-generic-lts-raring xserver-xorg-lts-raring
 
 # install some libs
-sudo apt-get install -y build-essential zlib1g zlib1g-dev openssl libssl-dev aspell-uk aspell-en
+sudo apt-get install -y build-essential zlib1g zlib1g-dev openssl libssl-dev aspell-uk aspell-en python-software-properties
 
 # install zsh and set it as default shell
 sudo apt-get install -y zsh
