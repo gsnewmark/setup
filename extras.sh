@@ -99,5 +99,10 @@ sudo add-apt-repository ppa:stefansundin/truecrypt
 sudo apt-get update
 sudo apt-get install truecrypt
 
+# install terra drop-down termina
+sudo add-apt-repository -y ppa:ozcanesen/terra-terminal
+sudo apt-get update
+sudo apt-get install -y terra
+
 # updated X.org
 sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
