@@ -51,3 +51,8 @@ sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
 sudo add-apt-repository -y ppa:keithw/mosh
 sudo apt-get update
 sudo apt-get install -y mosh
+
+# install bitcoin-qt
+sudo add-apt-repository -y ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get -y install bitcoin-qt
