@@ -101,5 +101,11 @@ sudo add-apt-repository -y ppa:ozcanesen/terra-terminal
 sudo apt-get update
 sudo apt-get install -y terra
 
+# install Zeal documentation browser
+sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
+sudo add-apt-repository -y ppa:jerzy-kozera/zeal-ppa
+sudo apt-get update
+sudo apt-get install
+
 # updated X.org
 sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
