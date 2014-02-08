@@ -86,11 +86,6 @@ sudo dpkg -i /tmp/steam.deb
 sudo apt-get update
 sudo apt-get install steam jockey-common nvidia-common python-xkit
 
-# install f.lux
-sudo add-apt-repository -y ppa:kilian/f.lux
-sudo apt-get update
-sudo apt-get -y install fluxgui
-
 # install TrueCrypt
 sudo add-apt-repository ppa:stefansundin/truecrypt
 sudo apt-get update
