@@ -51,3 +51,8 @@ sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
 sudo add-apt-repository -y ppa:keithw/mosh
 sudo apt-get update
 sudo apt-get install -y mosh
+
+# install latest Geary
+sudo add-apt-repository -y ppa:tombeckmann/geary
+sudo apt-get update
+sudo apt-get install -y geary
