@@ -47,7 +47,8 @@ sudo apt-get install dkms
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 sudo apt-get update
-sudo apt-get install -y virtualbox-4.2
+sudo apt-get install -y virtualbox-4.3
+sudo usermod -a -G vboxusers gsnewmark
 
 # install Vagrant
 wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.1_x86_64.deb
