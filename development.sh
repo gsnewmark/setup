@@ -12,7 +12,7 @@ wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
 chmod a+x ~/bin/lein
 
 # install sbt
-wget -O /tmp/sbt.deb http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.0/sbt.deb
+wget -O /tmp/sbt.deb http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.1/sbt.deb
 sudo dpkg -i /tmp/sbt.deb
 sudo apt-get update
 sudo apt-get install -y sbt
@@ -34,7 +34,7 @@ exec $SHELL -l
 rbenv install 2.0.0-p247
 rbenv rehash
 rbenv global 2.0.0-p247
-nvm install 0.10
+nvm install 0.11
 
 # install bundler
 gem install bundler
@@ -51,14 +51,15 @@ sudo apt-get install -y virtualbox-4.3
 sudo usermod -a -G vboxusers gsnewmark
 
 # install Vagrant
-wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.1_x86_64.deb
+wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.3_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb
 
 # install PhantomJS
-sudo wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2 -O /usr/local/share/phantomjs.tar.bz2
+https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
 cd /usr/local/share/
 sudo tar xjf phantomjs.tar.bz2
-sudo ln -s /usr/local/share/phantomjs-1.9.2-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
 sudo rm /usr/local/share/phantomjs.tar.bz2
 
 # install Racket

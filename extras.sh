@@ -42,9 +42,9 @@ sudo add-apt-repository -y ppa:versable/elementary-update && sudo apt-get update
 sudo apt-get install -y elementary-tweaks
 
 # install themes, icons
-sudo add-apt-repository -y ppa:fsvh/pacifica-icon-theme
 sudo apt-get install -y elementary-dark-theme
 sudo apt-get install -y elementary-elfaenza-icons elementary-thirdparty-icons
+sudo add-apt-repository -y ppa:fsvh/pacifica-icon-theme
 sudo apt-get install -y pacifica-icon-theme
 sudo apt-get install -y elementary-plank-themes
 sudo apt-get install -y elementary-wallpaper-collection
