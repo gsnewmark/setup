@@ -51,3 +51,8 @@ sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
 sudo add-apt-repository -y ppa:keithw/mosh
 sudo apt-get update
 sudo apt-get install -y mosh
+
+# install Birdie
+sudo add-apt-repository -y ppa:birdie-team/stable
+sudo apt-get update
+sudo apt-get install -y birdie
