@@ -51,3 +51,9 @@ sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
 sudo add-apt-repository -y ppa:keithw/mosh
 sudo apt-get update
 sudo apt-get install -y mosh
+
+# install Cisco VPN support
+sudo apt-get install -y network-manager-vpnc
+
+# install Remmina remote desktop client
+sudo apt-get install -y remmina
