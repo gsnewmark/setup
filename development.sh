@@ -61,8 +61,3 @@ cd /usr/local/share/
 sudo tar xjf phantomjs.tar.bz2
 sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
 sudo rm /usr/local/share/phantomjs.tar.bz2
-
-# install Racket
-sudo add-apt-repository -y ppa:plt/racket
-sudo apt-get update
-sudo apt-get install -y racket
