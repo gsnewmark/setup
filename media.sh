@@ -3,12 +3,18 @@
 # install codecs
 sudo apt-get -y install ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53
 
-# install players
+# install deadbeef and VLC
 sudo add-apt-repository -y ppa:n-muench/vlc
-sudo add-apt-repository -y ppa:nilarimogard/webupd8
-sudo add-apt-repository -y ppa:me-davidsansome/clementine
+sudo add-apt-repository -y ppa:starws-box/deadbeef-player
 sudo apt-get update
-sudo apt-get install -y vlc clementine audacious audacious-plugins
+sudo apt-get install -y vlc deadbeef
+
+# install Infobar plugin for deadbeef
+wget -O /tmp/deadbeef-infobar.zip http://sourceforge.net/projects/deadbeef/files/plugins/ddb_infobar-x86_64-1.4-171.zip/download
+mkdir -p ~/.local/lib/deadbeef
+unzip /tmp/deadbeef-infobar.zip -d ~/.local/lib/deadbeef/
+mv ~/.local/lib/deadbeef/plugins/* ~/.local/lib/deadbeef
+rmdir ~/.local/lib/deadbeef/plugins
 
 # install Calibre
 sudo add-apt-repository -y ppa:n-muench/calibre
