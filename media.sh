@@ -3,11 +3,12 @@
 # install codecs
 sudo apt-get -y install ubuntu-restricted-extras libavformat-extra-53 libavcodec-extra-53
 
-# install deadbeef and VLC
+# install deadbeef, clementine and VLC
 sudo add-apt-repository -y ppa:n-muench/vlc
 sudo add-apt-repository -y ppa:starws-box/deadbeef-player
+sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo apt-get update
-sudo apt-get install -y vlc deadbeef
+sudo apt-get install -y vlc deadbeef clementine
 
 # install Infobar plugin for deadbeef
 wget -O /tmp/deadbeef-infobar.zip http://sourceforge.net/projects/deadbeef/files/plugins/ddb_infobar-x86_64-1.4-171.zip/download
