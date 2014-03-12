@@ -1,59 +1,41 @@
 #!/bin/bash
 
-# add Canonical partner repository
-sudo add-apt-repository -y "deb http://archive.canonical.com/ precise partner"
-
-# install Conkeror
-sudo apt-key adv --keyserver pgp.uni-mainz.de --recv-keys 0F84088E
-echo 'deb     http://noone.org/conkeror-nightly-debs sid main
-deb-src http://noone.org/conkeror-nightly-debs sid main' | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install -y --force-yes conkeror
+# install Conkeror and make it default browser
+yaourt -S --noconfirm conkeror-git
 mkdir -p ~/.local/share/applications
 cp conkeror.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
-# install Chromium
-sudo apt-get install -y chromium-browser
+# install Chromium, Firefox, Tor Browser
+sudo pacman -S --noconfirm chromium firefox
+yaourt -S --noconfirm tor-browser-en
 
-# install Firefox, Thunderbird
-sudo apt-get install -y firefox thunderbird
+# install Geary
+sudo pacman -S --noconfirm geary
+
+# install Corebird Twitter client
+yaourt -S --noconfirm corebird-git
 
 # install Transmission
-sudo add-apt-repository -y ppa:transmissionbt/ppa && sudo apt-get update
-sudo apt-get install -y transmission
+sudo pacman -S --noconfirm transmission-gtk
 
 # install Skype
-sudo apt-get update && sudo apt-get install -y skype
+sudo pacman -S --noconfirm skype
 
 # install Java browser plugin
-sudo apt-get -y install icedtea-7-plugin
+sudo pacman -S --noconfirm icedtea-web-java7
 
 # install Dropbox
-wget -O /tmp/dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
-sudo dpkg -i /tmp/dropbox.deb
+yaourt -S --noconfirm dropbox-experimental
 
 # install SopCast player
-sudo add-apt-repository -y ppa:ferramroberto/sopcast
-sudo apt-get update
-sudo apt-get install -y sopcast-player
-
-# install xulrunner
-FFVER=`grep -Po  "\d{2}\.\d+" /usr/lib/firefox/platform.ini`
-ARCH=`uname -p`
-XURL=https://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/$FFVER/runtimes/xulrunner-$FFVER.en-US.linux-$ARCH.tar.bz2
-cd /opt
-sudo sh -c "wget -O- $XURL | tar -xj"
-sudo ln -s /opt/xulrunner/xulrunner /usr/bin/xulrunner
-sudo ln -s /opt/xulrunner/xpcshell /usr/bin/xpcshell
+yaourt -S --noconfirm sopcast-player
 
 # install Mosh
-sudo add-apt-repository -y ppa:keithw/mosh
-sudo apt-get update
-sudo apt-get install -y mosh
+sudo pacman -S --noconfirm mosh
 
 # install Cisco VPN support
-sudo apt-get install -y network-manager-vpnc
+sudo pacman -S --noconfirm networkmanager-vpnc
 
 # install Remmina remote desktop client
-sudo apt-get install -y remmina
+sudo pacman -S --noconfirm remmina

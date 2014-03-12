@@ -5,102 +5,64 @@ echo '#!/bin/sh
 LOG=/var/log/trim.log
 echo "*** $(date -R) ***" >> $LOG
 fstrim -v / >> $LOG' | sudo tee /etc/cron.daily/trim
+sudo chmod +x /etc/cron.daily/trim
 
 # TODO append only once
 # fix sound in Skype and volume control for DragonFly
 sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
 
 # remove unneeded standard software
-sudo apt-get remove -y shotwell brasero totem empathy
+sudo pacman -Rsn --noconfirm hexchat glade laptop-mode-tools
 
-# install tlp
-sudo add-apt-repository -y ppa:linrunner/tlp
-sudo apt-get update
-sudo apt-get install -y tlp tlp-rdw smartmontools ethtool
-sudo tlp start
+# make nemo default file manager
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
-# install java font fix
-sudo add-apt-repository -y ppa:no1wantdthisname/openjdk-fontfix
-sudo apt-get -y update
-sudo apt-get -y upgrade
+# Java font fix
+yaourt -S --noconfirm jre7-openjdk-headless-fontfix
+
+# install and start tlp
+sudo pacman -S --noconfirm tlp tlp-rdw
+sudo systemctl enable tlp
+sudo systemctl enable tlp-sleep
+sudo systemctl enable NetworkManager-dispatcher
 
 # install wine
-sudo add-apt-repository -y ppa:ubuntu-wine/ppa
-sudo apt-get update
-sudo apt-get install -y wine
+sudo pacman -S --noconfirm wine
 
 # install Arduino tools
-sudo apt-get -y install arduino arduino-core
-
-# install dconf-tools
-sudo apt-get install dconf-tools
-
-# add elementary community ppa
-sudo add-apt-repository -y ppa:versable/elementary-update && sudo apt-get update
-
-# install elementart tweaks
-sudo apt-get install -y elementary-tweaks
+# yaourt -S --noconfirm arduino
+# gpasswd -a $USER uucp
+# gpasswd -a $USER tty
 
 # install themes, icons
-sudo apt-get install -y elementary-dark-theme
-sudo apt-get install -y elementary-elfaenza-icons elementary-thirdparty-icons
-sudo add-apt-repository -y ppa:fsvh/pacifica-icon-theme
-sudo apt-get install -y pacifica-icon-theme
-sudo apt-get install -y elementary-plank-themes
-sudo apt-get install -y elementary-wallpaper-collection
+yaourt -S --noconfirm mediterraneannight-theme pacifica-icon-theme
 
-# install super-wingpanel
-sudo apt-add-repository -y ppa:heathbar/super-wingpanel
-sudo apt-get update
-sudo apt-get install -y super-wingpanel
-
-# install indicator synapse
-sudo apt-get install -y indicator-synapse
-
-# integrate dropbox
-sudo apt-get install pantheon-files-plugin-dropbox
+# install Docky dock
+yaourt -S --noconfirm docky
 
 # install Variety wallpaper changer
-sudo add-apt-repository -y ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get install -y variety
+yaourt -S --noconfirm variety
 
-# do not show bluetooth indicator
-gsettings set com.canonical.indicator.bluetooth visible false
-
-# install qtconfig to change Skype's font
-sudo apt-get install -y qt4-qtconfig
+# integrate dropbox
+yaourt -S --noconfirm nemo-dropbox-git
 
 # install Libre office
-sudo apt-get install -y libreoffice
+sudo pacman -S libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
 
 # install unclutter (hides mouse cursor)
-sudo apt-get install -y unclutter
+sudo pacman -S --noconfirm unclutter
 
 # install disk manager
-sudo apt-get install -y gnome-disk-utility
+sudo pacman -S --noconfirm gnome-disk-utility
 
 # install Steam
-wget -O /tmp/steam.deb http://media.steampowered.com/client/installer/steam.deb
-sudo dpkg -i /tmp/steam.deb
-sudo apt-get update
-sudo apt-get install steam jockey-common nvidia-common python-xkit
-
-# install TrueCrypt
-sudo add-apt-repository ppa:stefansundin/truecrypt
-sudo apt-get update
-sudo apt-get install truecrypt
-
-# install terra drop-down termina
-sudo add-apt-repository -y ppa:ozcanesen/terra-terminal
-sudo apt-get update
-sudo apt-get install -y terra
+sudo pacman -S --noconfirm ttf-liberation lib32-alsa-plugins lib32-intel-dri steam
 
 # install Zeal documentation browser
-sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
-sudo add-apt-repository -y ppa:jerzy-kozera/zeal-ppa
-sudo apt-get update
-sudo apt-get install
+yaourt -S --noconfirm zeal-git
 
-# updated X.org
-sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
+# install Intellij Idea
+yaourt -S --noconfirm intellij-idea-ultimate-edition
+
+# install LightTable
+yaourt -S --noconfirm light-table
