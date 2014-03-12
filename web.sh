@@ -16,6 +16,9 @@ sudo pacman -S --noconfirm geary
 # install Corebird Twitter client
 yaourt -S --noconfirm corebird-git
 
+# install Reditr Reddit client
+yaourt -S --noconfirm reditr
+
 # install Transmission
 sudo pacman -S --noconfirm transmission-gtk
 
