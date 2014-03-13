@@ -20,7 +20,7 @@ yaourt -S --noconfirm corebird-git
 yaourt -S --noconfirm reditr
 
 # install Transmission
-sudo pacman -S --noconfirm transmission-gtk
+sudo pacman -S --noconfirm transmission-gtk transmission-cli
 
 # install Skype
 sudo pacman -S --noconfirm skype
