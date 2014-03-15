@@ -58,6 +58,9 @@ sudo pacman -S --noconfirm gnome-disk-utility
 # install Steam
 sudo pacman -S --noconfirm ttf-liberation lib32-alsa-plugins lib32-intel-dri steam
 
+# install Terra drop-down terminal
+yaourt -S --noconfirm terra
+
 # install Zeal documentation browser
 yaourt -S --noconfirm zeal-git
 
