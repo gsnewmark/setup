@@ -29,6 +29,9 @@ sudo systemctl enable NetworkManager-dispatcher
 # install wine
 sudo pacman -S --noconfirm wine
 
+# install i3 WM
+sudo pacman -S --noconfirm i3 dmenu
+
 # install Arduino tools
 # yaourt -S --noconfirm arduino
 # gpasswd -a $USER uucp
@@ -36,12 +39,6 @@ sudo pacman -S --noconfirm wine
 
 # install themes, icons
 yaourt -S --noconfirm mediterraneannight-theme pacifica-icon-theme
-
-# install Docky dock
-yaourt -S --noconfirm docky
-
-# install Variety wallpaper changer
-yaourt -S --noconfirm variety
 
 # integrate dropbox
 yaourt -S --noconfirm nemo-dropbox-git
@@ -57,9 +54,6 @@ sudo pacman -S --noconfirm gnome-disk-utility
 
 # install Steam
 sudo pacman -S --noconfirm ttf-liberation lib32-alsa-plugins lib32-intel-dri steam
-
-# install Terra drop-down terminal
-yaourt -S --noconfirm terra
 
 # install Zeal documentation browser
 yaourt -S --noconfirm zeal-git
