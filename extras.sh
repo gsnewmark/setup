@@ -30,7 +30,8 @@ sudo systemctl enable NetworkManager-dispatcher
 sudo pacman -S --noconfirm wine
 
 # install i3 WM
-sudo pacman -S --noconfirm i3 dmenu
+sudo pacman -S --noconfirm i3
+yaourt -S --noconfirm dmenu-xft-fuzzy
 
 # install Arduino tools
 # yaourt -S --noconfirm arduino
