@@ -31,7 +31,7 @@ sudo pacman -S --noconfirm wine
 
 # install i3 WM
 sudo pacman -S --noconfirm i3
-yaourt -S --noconfirm dmenu-xft-fuzzy
+yaourt -S --noconfirm dmenu-xft-fuzzy xboomx
 
 # install Arduino tools
 # yaourt -S --noconfirm arduino
