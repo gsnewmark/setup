@@ -25,11 +25,11 @@ yaourt -S --noconfirm ruby-bundler
 yaourt -S --noconfirm heroku-toolbelt
 
 # install Virtualbox
-sudo pacman -S --noconfirm virtualbox qt4
+sudo pacman -S --noconfirm qt4 virtualbox
 sudo usermod -a -G vboxusers $USER
 
 # install Vagrant
-yaourt -S --noconfirm vagrant
+yaourt -S --noconfirm vagrant-git
 
 # install nvm
 git clone git://github.com/creationix/nvm.git $HOME/.nvm

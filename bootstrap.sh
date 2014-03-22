@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -S --noconfirm git
+
 git submodule init
 git submodule update
 

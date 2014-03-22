@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm zsh
 chsh -s $(which zsh)
 
 # install useful utils
-sudo pacman -S --noconfirm htop curl wget git xterm links xclip tmux lm_sensors rsync yaourt
+sudo pacman -S --noconfirm htop curl wget xterm links xclip tmux lm_sensors rsync yaourt openssh nfs-utils
 
 # install python (for dotfiles bootstrap script)
 sudo pacman -S --noconfirm python python2

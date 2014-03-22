@@ -4,7 +4,7 @@
 Version=1.0
 Type=Application
 Terminal=false
-Icon=conkeror.png
+Icon=midori
 Name=Conkeror
 Comment=Emacs like Web Browser
 GenericName=Web Browser

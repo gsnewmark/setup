@@ -12,13 +12,11 @@ sudo chmod +x /etc/cron.daily/trim
 sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
 
 # remove unneeded standard software
-sudo pacman -Rsn --noconfirm hexchat glade laptop-mode-tools
-
-# make nemo default file manager
-xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+sudo pacman -Rsn --noconfirm hexchat laptop-mode-tools pidgin thunderbird xnoise
 
 # Java font fix
-yaourt -S --noconfirm jre7-openjdk-headless-fontfix
+mkdir $HOME/tmp
+yaourt -S --noconfirm jre7-openjdk-headless-fontfix --tmp $HOME/tmp
 
 # install and start tlp
 sudo pacman -S --noconfirm tlp tlp-rdw
@@ -29,9 +27,8 @@ sudo systemctl enable NetworkManager-dispatcher
 # install wine
 sudo pacman -S --noconfirm wine
 
-# install i3 WM + Gnome
-yaourt -S --noconfirm gnome i3-gnome
-yaourt -S --noconfirm dmenu-xft-fuzzy xboomx
+# install i3 WM
+yaourt -S --noconfirm i3-wm dmenu-xft-fuzzy xboomx
 
 # install Arduino tools
 # yaourt -S --noconfirm arduino
@@ -42,10 +39,10 @@ yaourt -S --noconfirm dmenu-xft-fuzzy xboomx
 yaourt -S --noconfirm mediterraneannight-theme pacifica-icon-theme
 
 # integrate dropbox
-yaourt -S --noconfirm nemo-dropbox-git
+yaourt -S --noconfirm thunar-dropbox
 
 # install Libre office
-sudo pacman -S libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
+sudo pacman -S --noconfirm libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
 
 # install unclutter (hides mouse cursor)
 sudo pacman -S --noconfirm unclutter
