@@ -30,6 +30,10 @@ sudo pacman -S --noconfirm wine
 # install i3 WM
 yaourt -S --noconfirm i3-wm i3status dmenu-xft-fuzzy xboomx
 
+# install infinality for better font rendering
+yaourt -S freetype2-infinality lib32-freetype2-infinality fontconfig-infinality
+sudo infctl setstyle osx
+
 # install Arduino tools
 # yaourt -S --noconfirm arduino
 # gpasswd -a $USER uucp
