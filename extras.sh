@@ -40,7 +40,7 @@ sudo infctl setstyle osx2
 # gpasswd -a $USER tty
 
 # install themes, icons
-yaourt -S --noconfirm mediterraneannight-theme pacifica-icon-theme
+yaourt -S --noconfirm mediterraneannight-theme pacifica-icon-theme faenza-icon-theme
 
 # integrate dropbox
 yaourt -S --noconfirm thunar-dropbox
