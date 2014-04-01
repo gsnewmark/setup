@@ -32,7 +32,7 @@ yaourt -S --noconfirm i3-wm i3status dmenu-xft-fuzzy xboomx quickswith-i3 compto
 
 # install infinality for better font rendering
 yaourt -S freetype2-infinality lib32-freetype2-infinality fontconfig-infinality
-sudo infctl setstyle infinality
+sudo infctl setstyle osx
 
 # install Arduino tools
 # yaourt -S --noconfirm arduino
