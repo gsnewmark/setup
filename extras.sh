@@ -30,9 +30,8 @@ sudo pacman -S --noconfirm wine
 # install i3 WM
 yaourt -S --noconfirm i3-wm i3status dmenu-xft-fuzzy xboomx quickswith-i3 compton feh terminus-font
 
-# install infinality for better font rendering
-yaourt -S freetype2-infinality lib32-freetype2-infinality fontconfig-infinality
-sudo infctl setstyle osx
+# install Ubuntu font rendering patches
+yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
 # install Arduino tools
 # yaourt -S --noconfirm arduino
