@@ -28,7 +28,7 @@ sudo systemctl enable NetworkManager-dispatcher
 sudo pacman -S --noconfirm wine
 
 # install i3 WM
-yaourt -S --noconfirm i3-wm i3blocks dmenu-xft-fuzzy xboomx quickswith-i3 compton feh terminus-font
+yaourt -S --noconfirm i3-wm i3blocks dmenu-xft-fuzzy xboomx quickswith-i3 compton feh terminus-font skb
 
 # install Ubuntu font rendering patches
 yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
