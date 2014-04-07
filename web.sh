@@ -39,3 +39,6 @@ sudo pacman -S --noconfirm networkmanager-vpnc
 
 # install Remmina remote desktop client
 sudo pacman -S --noconfirm remmina
+
+# install Liferea RSS reader
+sudo pacman -S --noconfirm liferea
