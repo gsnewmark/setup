@@ -16,6 +16,9 @@ sudo pacman -S --noconfirm python python2
 # install byobu
 yaourt -S --noconfirm byobu
 
+# install ranger file manager
+yaourt -S --noconfirm libcaca highlight atool poppler mediainfo ranger
+
 # install editors
 sudo pacman -S --noconfirm emacs vim
 
