@@ -19,8 +19,8 @@ yaourt -S --noconfirm corebird-git
 # install Transmission
 sudo pacman -S --noconfirm transmission-gtk transmission-cli
 
-# install Skype
-sudo pacman -S --noconfirm skype
+# install Skype + 32-bit GTK libs (for GTK themes support)
+sudo pacman -S --noconfirm skype lib32-gtk2
 
 # install Java browser plugin
 sudo pacman -S --noconfirm icedtea-web-java7
