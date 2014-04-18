@@ -61,3 +61,5 @@ yaourt -S --noconfirm intellij-idea-ultimate-edition
 
 # install LightTable
 yaourt -S --noconfirm light-table
+
+yaourt -S --noconfirm archey lolcat
