@@ -30,6 +30,9 @@ sudo pacman -S --noconfirm wine
 # install i3 WM
 yaourt -S --noconfirm i3-wm i3blocks dmenu-xft-fuzzy xboomx quickswith-i3 compton feh ttf-font-awesome skb
 
+# install terminal
+sudo pacman -S --noconfirm gnome-terminal
+
 # install Ubuntu font rendering patches
 yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
