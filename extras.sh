@@ -42,7 +42,9 @@ yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 # gpasswd -a $USER tty
 
 # install themes, icons
-yaourt -S --noconfirm mediterraneannight-theme gtk-theme-numix-solarized pacifica-icon-theme faenza-icon-theme
+yaourt -S --noconfirm mediterraneannight-theme faenza-icon-theme
+git clone https://bitbucket.org/platinumthinker/dotfiles.git /tmp/solarized-themes
+sudo cp -r /tmp/solarized-themes/themes.symlink/* /usr/share/themes
 
 # integrate dropbox
 yaourt -S --noconfirm thunar-dropbox
