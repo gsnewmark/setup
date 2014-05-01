@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm gnome-terminal
 yaourt -S --noconfirm mediterraneannight-theme gtk-theme-numix-solarized faenza-icon-theme
 
 # install and enable lightdm
-sudo pacman -S lightdm lightdm-gtk3-greeter
+sudo pacman -S --noconfirm lightdm lightdm-gtk3-greeter
 sudo cp $HOME/setup/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter
 sudo systemctl enable lightdm.service
 
