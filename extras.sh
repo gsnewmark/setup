@@ -44,6 +44,11 @@ yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 # install themes, icons
 yaourt -S --noconfirm mediterraneannight-theme gtk-theme-numix-solarized faenza-icon-theme
 
+# install and enable lightdm
+sudo pacman -S lightdm lightdm-gtk3-greeter
+sudo cp $HOME/setup/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter
+sudo systemctl enable lightdm.service
+
 # integrate dropbox
 yaourt -S --noconfirm thunar-dropbox
 
