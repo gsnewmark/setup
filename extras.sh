@@ -27,12 +27,6 @@ sudo systemctl enable NetworkManager-dispatcher
 # install wine
 sudo pacman -S --noconfirm wine
 
-# install i3 WM
-yaourt -S --noconfirm i3-wm i3blocks dmenu-xft-fuzzy xboomx quickswith-i3 compton feh ttf-font-awesome skb
-
-# install terminal
-sudo pacman -S --noconfirm gnome-terminal
-
 # install Ubuntu font rendering patches
 yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
@@ -41,22 +35,11 @@ yaourt -S --noconfirm freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 # gpasswd -a $USER uucp
 # gpasswd -a $USER tty
 
-# install themes, icons
-yaourt -S --noconfirm mediterraneannight-theme gtk-theme-numix-solarized faenza-icon-theme
-
-# install and enable lightdm
-sudo pacman -S lightdm lightdm-gtk3-greeter
-sudo cp $HOME/setup/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter
-sudo systemctl enable lightdm.service
-
 # integrate dropbox
 yaourt -S --noconfirm thunar-dropbox
 
 # install Libre office
 sudo pacman -S --noconfirm libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
-
-# install unclutter (hides mouse cursor)
-sudo pacman -S --noconfirm unclutter
 
 # install disk manager
 sudo pacman -S --noconfirm gnome-disk-utility

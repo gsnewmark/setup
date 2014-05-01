@@ -9,4 +9,5 @@ git submodule update
 ./development.sh
 ./web.sh
 ./media.sh
+./desktop_environment.sh
 ./extras.sh
