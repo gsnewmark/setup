@@ -41,6 +41,9 @@ yaourt -S --noconfirm thunar-dropbox
 # install Libre office
 sudo pacman -S --noconfirm libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
 
+# install TexLive
+sudo pacman -S texlive-most texlive-lang
+
 # install disk manager
 sudo pacman -S --noconfirm gnome-disk-utility
 
