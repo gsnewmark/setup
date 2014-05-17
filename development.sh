@@ -31,12 +31,8 @@ sudo usermod -a -G vboxusers $USER
 # install Vagrant
 yaourt -S --noconfirm vagrant-git
 
-# install nvm
-git clone git://github.com/creationix/nvm.git $HOME/.nvm
-
 # install Node.js
-exec $SHELL -l
-nvm install 0.11
+sudo pacman -S --noconfirm nodejs
 
 # install PhantomJS
 sudo pacman -S --noconfirm phantomjs

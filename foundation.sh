@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm zsh
 chsh -s $(which zsh)
 
 # install useful utils
-sudo pacman -S --noconfirm htop curl wget xterm links xclip tmux lm_sensors rsync yaourt openssh nfs-utils tree
+sudo pacman -S --noconfirm htop curl wget xterm links xclip tmux lm_sensors rsync openssh nfs-utils tree
 
 # install python (for dotfiles bootstrap script)
 sudo pacman -S --noconfirm python python2
@@ -34,4 +34,8 @@ git clone git@github.com:gsnewmark/dotfiles.git
 cd dotfiles
 git submodule init
 git submodule update
+cd live-packs/tern-pack
+git submodule init
+git submodule update
+cd ../..
 ./bootstrap

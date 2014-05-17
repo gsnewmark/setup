@@ -19,6 +19,9 @@ yaourt -S --noconfirm corebird-git
 # install Transmission
 sudo pacman -S --noconfirm transmission-gtk transmission-cli
 
+# install Liferea RSS reader
+sudo pacman -S --noconfirm liferea
+
 # install Skype + 32-bit GTK libs (for GTK themes support)
 sudo pacman -S --noconfirm skype lib32-gtk2
 
@@ -39,6 +42,3 @@ sudo pacman -S --noconfirm networkmanager-vpnc networkmanager-openvpn
 
 # install Remmina remote desktop client
 sudo pacman -S --noconfirm remmina
-
-# install Liferea RSS reader
-sudo pacman -S --noconfirm liferea
