@@ -50,5 +50,8 @@ sudo pacman -S --noconfirm ttf-liberation lib32-alsa-plugins llib32-flashplugin 
 # install Intellij Idea
 yaourt -S --noconfirm intellij-idea-ultimate-edition
 
+# install ntfs support
+sudo pacman -S ntfs-3g
+
 # install few funny utils
 yaourt -S --noconfirm archey lolcat
