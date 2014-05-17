@@ -3,6 +3,9 @@
 # install DE + i3 WM
 yaourt -S --noconfirm xfce4 xfce4-notifyd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb
 
+# disable nautilus desktop handling
+gsettings set org.gnome.desktop.background show-desktop-icons false
+
 # install terminal emulator
 sudo pacman -S --noconfirm gnome-terminal
 
