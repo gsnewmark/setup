@@ -12,6 +12,9 @@ sudo pacman -S --noconfirm gnome-terminal
 # install pulseaudio and pulse audio control panel
 sudo pacman -S --noconfirm pulseaudio pavucontrol alsa-utils
 
+# install document viewer
+sudo pacman -S evince eog
+
 # install and enable network manager
 sudo pacman -S --noconfirm networkmanager network-manager-applet
 sudo systemctl enable NetworkManager.service
