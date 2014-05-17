@@ -33,7 +33,10 @@ sudo pacman -S --noconfirm wine
 yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
 # integrate dropbox
-yaourt -S --noconfirm nautilus-dropbox
+yaourt -S --noconfirm thunar-dropbox
+
+# install disk utility
+sudo pacman -S --noconfirm gnome-disk-utility
 
 # install Libre office
 sudo pacman -S --noconfirm libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
