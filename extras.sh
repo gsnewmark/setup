@@ -17,7 +17,8 @@ sudo chmod +x /etc/cron.daily/trim
 sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
 
 # Java font fix
-yaourt -S --noconfirm jre7-openjdk-headless-fontfix
+mkdir $HOME/tmp
+yaourt -S jre7-openjdk-headless-fontfix --tmp $HOME/tmp
 
 # install and start tlp
 sudo pacman -S --noconfirm tlp tlp-rdw
