@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# install video driver
+sudo pacman -S --noconfirm xf86-video-intel lib32-intel-dri
+
+# install X.Org server
+sudo pacman -S --noconfirm xorg-server xorg-server-utils
+
 # install some libs
 sudo pacman -S --noconfirm base-devel zlib openssl aspell-uk aspell-en
 

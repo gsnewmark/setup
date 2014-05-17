@@ -34,8 +34,8 @@ yaourt -S --noconfirm sopcast-player
 # install Mosh
 sudo pacman -S --noconfirm mosh
 
-# install Cisco VPN support
-sudo pacman -S --noconfirm networkmanager-vpnc
+# install Cisco VPN and OpenVPN support
+sudo pacman -S --noconfirm networkmanager-vpnc networkmanager-openvpn
 
 # install Remmina remote desktop client
 sudo pacman -S --noconfirm remmina

@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# install i3 WM
-yaourt -S --noconfirm i3-wm i3blocks dmenu-xft-fuzzy xboomx quickswith-i3 compton feh ttf-font-awesome skb
+# install Gnome + i3 WM
+yaourt -S --noconfirm gnome i3-gnome i3blocks dmenu-xft-fuzzy xboomx quickswith-i3 compton feh ttf-font-awesome skb
+
+# install and enable network manager
+sudo pacman -S --noconfirm networkmanager
+sudo systemctl enable NetworkManager.service
 
 # install terminal
 sudo pacman -S --noconfirm gnome-terminal
