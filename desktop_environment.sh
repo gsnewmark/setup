@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install DE + i3 WM
-yaourt -S --noconfirm xfce4 xfce4-notifyd xfce4-screenshooter xfce4-xkb-plugin gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb gfvs
+yaourt -S --noconfirm xfce4 xfce4-notifyd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb gfvs
 
 # disable nautilus desktop handling
 gsettings set org.gnome.desktop.background show-desktop-icons false
