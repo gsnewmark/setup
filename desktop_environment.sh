@@ -3,11 +3,14 @@
 # install DE + i3 WM
 yaourt -S --noconfirm xfce4 xfce4-notifyd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb gfvs
 
-# disable nautilus desktop handling
-gsettings set org.gnome.desktop.background show-desktop-icons false
-
 # install terminal emulator
 sudo pacman -S --noconfirm gnome-terminal
+
+# install archivers
+sudo pacman -S --noconfirm file-roller p7zip thunar-archive-plugin
+
+# install GUI text editor
+sudo pacman -S --noconfirm gedit
 
 # install pulseaudio and pulse audio control panel
 sudo pacman -S --noconfirm pulseaudio pavucontrol alsa-utils
