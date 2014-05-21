@@ -15,6 +15,9 @@ sudo pacman -S --noconfirm gedit
 # install pulseaudio and pulse audio control panel
 sudo pacman -S --noconfirm pulseaudio pavucontrol alsa-utils
 
+# install daemon for volume change notifications
+yaourt -S --noconfirm xfce4-volumed
+
 # install document viewer
 sudo pacman -S --noconfirm evince eog
 
