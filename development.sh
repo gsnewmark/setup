@@ -2,7 +2,7 @@
 
 # install Java
 sudo pacman -S --noconfirm jdk7-openjdk maven
-yaourt -S --noconfirm jdk6-compat
+yaourt -S --noconfirm jdk6-compat jdk7-compat
 
 # install Leiningen
 mkdir -p $HOME/bin
