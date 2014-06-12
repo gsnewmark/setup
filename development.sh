@@ -21,6 +21,9 @@ sudo pip install virtualenv
 sudo pacman -S --noconfirm ruby
 yaourt -S --noconfirm ruby-bundler
 
+# install Haskell
+sudo pacman -S cabal-install ghc happy alex haddock
+
 # install Heroky toolbelt
 yaourt -S --noconfirm heroku-toolbelt
 
