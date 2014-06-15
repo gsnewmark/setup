@@ -3,6 +3,11 @@
 # install deadbeef and VLC
 sudo pacman -S --noconfirm vlc deadbeef
 
+# install mpd and ncmpcpp
+sudo pacman -S --noconfirm mpd ncmpcpp
+mkdir -p $HOME/.mpd/playlists
+touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
+
 # install Infobar plugin for deadbeef
 wget -O /tmp/deadbeef-infobar.zip http://sourceforge.net/projects/deadbeef/files/plugins/ddb_infobar-x86_64-1.4-171.zip/download
 mkdir -p ~/.local/lib/deadbeef
