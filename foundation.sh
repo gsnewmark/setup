@@ -13,11 +13,11 @@ sudo pacman -S --noconfirm base-devel zlib openssl aspell-uk aspell-en
 sudo pacman -S --noconfirm zsh
 chsh -s $(which zsh)
 
-# install useful utils
-sudo pacman -S --noconfirm htop curl wget xterm links xclip tmux lm_sensors rsync openssh nfs-utils tree unzip
-
 # install python (for dotfiles bootstrap script)
 sudo pacman -S --noconfirm python python2
+
+# install useful utils
+sudo pacman -S --noconfirm htop curl wget httpie xterm links xclip tmux lm_sensors rsync openssh nfs-utils tree unzip
 
 # install byobu
 yaourt -S --noconfirm byobu
