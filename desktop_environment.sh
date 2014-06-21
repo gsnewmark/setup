@@ -12,6 +12,9 @@ sudo pacman -S --noconfirm file-roller p7zip thunar-archive-plugin
 # install GUI text editor
 sudo pacman -S --noconfirm gedit
 
+# install ranger file manager
+yaourt -S --noconfirm libcaca highlight atool poppler mediainfo ranger
+
 # install pulseaudio and pulse audio control panel
 sudo pacman -S --noconfirm pulseaudio pavucontrol alsa-utils
 

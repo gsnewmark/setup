@@ -53,5 +53,8 @@ yaourt -S --noconfirm intellij-idea-ultimate-edition
 # install ntfs support
 sudo pacman -S ntfs-3g
 
+# install byobu
+yaourt -S --noconfirm byobu
+
 # install few funny utils
 yaourt -S --noconfirm archey lolcat
