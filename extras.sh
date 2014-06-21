@@ -16,10 +16,6 @@ sudo chmod +x /etc/cron.daily/trim
 # fix sound in Skype and volume control for DragonFly
 sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
 
-# Java font fix
-mkdir $HOME/tmp
-yaourt -S jre7-openjdk-headless-fontfix --tmp $HOME/tmp
-
 # install and start tlp
 sudo pacman -S tlp tlp-rdw
 sudo systemctl enable tlp
@@ -45,7 +41,7 @@ sudo pacman -S libreoffice-base libreoffice-calc libreoffice-common libreoffice-
 sudo pacman -S texlive-most texlive-lang
 
 # install Steam
-sudo pacman -S ttf-liberation lib32-alsa-plugins llib32-flashplugin steam
+sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin steam
 
 # install Intellij Idea
 yaourt -S intellij-idea-ultimate-edition
