@@ -17,7 +17,7 @@ chsh -s $(which zsh)
 sudo pacman -S --noconfirm python python2
 
 # install useful utils
-sudo pacman -S --noconfirm htop curl wget httpie xterm links xclip tmux lm_sensors rsync openssh tree unzip
+sudo pacman -S --noconfirm htop curl wget httpie xterm links xclip tmux lm_sensors rsync tree unzip
 
 # install editors
 sudo pacman -S --noconfirm emacs vim

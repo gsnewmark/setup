@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm git openssh
 
 git submodule init
 git submodule update
