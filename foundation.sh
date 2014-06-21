@@ -1,26 +1,26 @@
 #!/bin/bash
 
 # install video driver
-sudo pacman -S --noconfirm xf86-video-intel lib32-intel-dri
+sudo pacman -S xf86-video-intel lib32-intel-dri
 
 # install X.Org server
-sudo pacman -S --noconfirm xorg-server xorg-server-utils
+sudo pacman -S xorg-server xorg-server-utils
 
 # install some libs
-sudo pacman -S --noconfirm base-devel zlib openssl aspell-uk aspell-en
+sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
 
 # install zsh and set it as default shell
-sudo pacman -S --noconfirm zsh
+sudo pacman -S zsh
 chsh -s $(which zsh)
 
 # install python (for dotfiles bootstrap script)
-sudo pacman -S --noconfirm python python2
+sudo pacman -S python python2
 
 # install useful utils
-sudo pacman -S --noconfirm htop curl wget httpie xterm links xclip tmux lm_sensors rsync tree unzip
+sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync tree unzip
 
 # install editors
-sudo pacman -S --noconfirm emacs vim
+sudo pacman -S emacs vim
 
 # checkout and activate dotfiles
 cd $HOME

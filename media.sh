@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # install deadbeef and VLC
-sudo pacman -S --noconfirm vlc deadbeef
+sudo pacman -S vlc deadbeef
 
 # install mpd and ncmpcpp
-sudo pacman -S --noconfirm mpd ncmpcpp
+sudo pacman -S mpd ncmpcpp
 mkdir -p $HOME/.mpd/playlists
 touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
-yaourt -S --noconfirm mpdscribble
+yaourt -S mpdscribble
 mkdir $HOME/.mpdscribble
 cp /usr/share/mpdscribble/mpdscribble.conf.example $HOME/.mpdscribble/mpdscribble.conf
 
@@ -19,10 +19,10 @@ mv ~/.local/lib/deadbeef/plugins/* ~/.local/lib/deadbeef
 rmdir ~/.local/lib/deadbeef/plugins
 
 # install Calibre
-sudo pacman -S --noconfirm calibre
+sudo pacman -S calibre
 
 # install Rockbox Utility
-sudo pacman -S --noconfirm rbutil
+sudo pacman -S rbutil
 
 # install GIMP
-sudo pacman -S --noconfirm gimp
+sudo pacman -S gimp

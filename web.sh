@@ -1,44 +1,44 @@
 #!/bin/bash
 
 # install Conkeror and make it default browser
-yaourt -S --noconfirm conkeror-git
+yaourt -S conkeror-git
 mkdir -p ~/.local/share/applications
 cp conkeror.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
 # install Chromium, Firefox, Tor Browser
-sudo pacman -S --noconfirm chromium firefox
-yaourt -S --noconfirm tor-browser-en
+sudo pacman -S chromium firefox
+yaourt -S tor-browser-en
 
 # install Geary
-sudo pacman -S --noconfirm geary
+sudo pacman -S geary
 
 # install Corebird Twitter client
-yaourt -S --noconfirm corebird-git
+yaourt -S corebird-git
 
 # install Transmission
-sudo pacman -S --noconfirm transmission-gtk transmission-cli
+sudo pacman -S transmission-gtk transmission-cli
 
 # install Liferea RSS reader
-sudo pacman -S --noconfirm liferea
+sudo pacman -S liferea
 
 # install Skype + 32-bit GTK libs (for GTK themes support)
-sudo pacman -S --noconfirm skype lib32-gtk2
+sudo pacman -S skype lib32-gtk2
 
 # install Java browser plugin
-sudo pacman -S --noconfirm icedtea-web-java7
+sudo pacman -S icedtea-web-java7
 
 # install Dropbox
-yaourt -S --noconfirm dropbox-experimental
+yaourt -S dropbox-experimental
 
 # install SopCast player
-yaourt -S --noconfirm sopcast-player
+yaourt -S sopcast-player
 
 # install Mosh
-sudo pacman -S --noconfirm mosh
+sudo pacman -S mosh
 
 # install Cisco VPN and OpenVPN support
-sudo pacman -S --noconfirm networkmanager-vpnc networkmanager-openvpn
+sudo pacman -S networkmanager-vpnc networkmanager-openvpn
 
 # install Remmina remote desktop client
-sudo pacman -S --noconfirm remmina
+sudo pacman -S remmina
