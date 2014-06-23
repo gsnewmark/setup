@@ -13,8 +13,8 @@ yaourt -S tor-browser-en
 # install Geary
 sudo pacman -S geary
 
-# install turses Twitter client
-yaourt -S turses
+# install earthquake Twitter client
+gem install earthquake
 
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
