@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install DE + i3 WM
-yaourt -S xfce4 xfce4-notifyd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb gvfs xorg-utils
+yaourt -S xfce4 notify-osd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb gvfs xorg-utils
 
 # install terminal emulator
 sudo pacman -S gnome-terminal
