@@ -13,8 +13,8 @@ yaourt -S tor-browser-en
 # install Geary
 sudo pacman -S geary
 
-# install earthquake Twitter client
-gem install earthquake
+# install Corebird Twitter client
+yaourt -S corebird-git
 
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
