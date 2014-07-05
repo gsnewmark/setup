@@ -21,10 +21,13 @@ sudo pip install virtualenv
 sudo pacman -S ruby
 yaourt -S ruby-bundler
 
-# install Haskell and some packages
-sudo pacman -S cabal-install ghc happy alex haddock
-cabal update
-cabal install ghc-mod structured-haskell-mode stylish-haskell
+# add Haskell-specific repo, install Haskell and some packages
+awk -v RS='' '/\[core\]/ { print; print "[haskell-core]"; print "Server = http://xsounds.org/~haskell/core/$arch"; next }1' /etc/pacman.conf > pacman.conf.tmp && sudo
+mv pacman.conf.tmp /etc/pacman.conf
+sudo pacman-key -r 4209170B
+sudo pacman-key --lsign-key 4209170B
+sudo pacman -Syy
+sudo pacman -S cabal-install ghc happy alex haddock haskell-ghc-mod haskell-stylish-haskell
 
 # install Heroky toolbelt
 yaourt -S heroku-toolbelt
