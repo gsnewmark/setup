@@ -12,8 +12,8 @@ sudo pacman -S file-roller p7zip thunar-archive-plugin
 # install GUI text editor
 sudo pacman -S gedit
 
-# install ranger file manager
-yaourt -S libcaca highlight atool poppler mediainfo ranger
+# install ranger file manager and apps for enhanced functionality
+sudo pacman -S highlight atool poppler mediainfo ranger w3m imlib2
 
 # install pulseaudio and pulse audio control panel
 sudo pacman -S pulseaudio pavucontrol alsa-utils
