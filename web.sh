@@ -22,9 +22,6 @@ yaourt -S corebird-git
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
 
-# install Liferea RSS reader
-sudo pacman -S liferea
-
 # install Skype + 32-bit GTK libs (for GTK themes support)
 sudo pacman -S skype lib32-gtk2
 
