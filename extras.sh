@@ -54,3 +54,6 @@ yaourt -S byobu
 
 # install few funny utils
 yaourt -S archey lolcat
+
+# install M+ font family
+yaourt -S ttf-mplus
