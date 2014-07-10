@@ -45,6 +45,9 @@ sudo pacman -S nodejs
 # install PhantomJS
 sudo pacman -S phantomjs
 
+# install nginx
+sudo pacman -S nginx
+
 # install TrueCrypt
 sudo pacman -S truecrypt
 
