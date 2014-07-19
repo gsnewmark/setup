@@ -28,9 +28,6 @@ sudo pacman -S wine
 # install Ubuntu font rendering patches
 yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
-# integrate dropbox
-yaourt -S thunar-dropbox
-
 # install disk utility
 sudo pacman -S gnome-disk-utility
 

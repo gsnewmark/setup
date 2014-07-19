@@ -38,3 +38,6 @@ sudo systemctl enable lightdm.service
 
 # install unclutter (hides mouse cursor)
 sudo pacman -S unclutter
+
+# integrate dropbox
+yaourt -S thunar-dropbox

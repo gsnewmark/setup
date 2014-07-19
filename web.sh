@@ -29,7 +29,7 @@ sudo pacman -S skype lib32-gtk2
 sudo pacman -S icedtea-web-java7
 
 # install Dropbox
-yaourt -S dropbox-experimental
+yaourt -S dropbox
 
 # install SopCast player
 yaourt -S sopcast-player
