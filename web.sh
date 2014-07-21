@@ -10,8 +10,9 @@ update-desktop-database ~/.local/share/applications
 sudo pacman -S chromium firefox
 yaourt -S tor-browser-en
 
-# install flash plugin
+# install flash plugin and Pulse support
 sudo pacman -S flashplugin
+yaourt -S libflashsupport-pulse
 
 # install Geary
 sudo pacman -S geary
