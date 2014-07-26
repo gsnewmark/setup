@@ -18,8 +18,8 @@ sudo pacman -S highlight atool poppler mediainfo ranger w3m imlib2
 # install pulseaudio and pulse audio control panel
 sudo pacman -S pulseaudio pavucontrol alsa-utils
 
-# install daemon for volume change notifications
-yaourt -S xfce4-volumed
+# install daemon for volume change handling
+yaourt -S pa-applet-git
 
 # install document viewer
 sudo pacman -S evince eog
