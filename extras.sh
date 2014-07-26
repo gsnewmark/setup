@@ -38,7 +38,8 @@ sudo pacman -S libreoffice-base libreoffice-calc libreoffice-common libreoffice-
 sudo pacman -S texlive-most texlive-lang
 
 # install Steam
-sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin steam
+sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin lib32-libpulse pulseaudio-alsa
+sudo pacman -S steam
 
 # install Intellij Idea
 yaourt -S intellij-idea-ultimate-edition
