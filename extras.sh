@@ -52,3 +52,6 @@ yaourt -S byobu
 
 # install few funny utils
 yaourt -S archey lolcat
+
+# gamepad support
+yaourt -S xboxdrv
