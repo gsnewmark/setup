@@ -53,3 +53,6 @@ sudo pacman -S truecrypt
 
 # install Travis CI CLI utils
 yaourt -S ruby-travis
+
+# install TernJS and ESLint
+sudo npm install -g tern eslint

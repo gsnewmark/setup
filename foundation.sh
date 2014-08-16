@@ -28,8 +28,5 @@ git clone git@github.com:gsnewmark/dotfiles.git
 cd dotfiles
 git submodule init
 git submodule update
-cd live-packs/tern-pack
-git submodule init
-git submodule update
-cd ../..
+cd ..
 ./bootstrap
