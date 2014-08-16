@@ -3,8 +3,8 @@
 # install deadbeef and VLC
 sudo pacman -S vlc deadbeef
 
-# install mpd and ncmpcpp
-sudo pacman -S mpd ncmpcpp
+# install mpd, mpd and ncmpcpp
+sudo pacman -S mpd mpc ncmpcpp
 mkdir -p $HOME/.mpd/playlists
 touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
 yaourt -S mpdscribble
