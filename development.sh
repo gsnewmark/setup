@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # install Java
-sudo pacman -S jdk7-openjdk maven
-yaourt -S jdk6-compat jdk7-compat
+sudo pacman -S jdk7-openjdk openjdk7-doc openjdk7-src jdk8-openjdk openjdk8-doc openjdk8-src maven
+yaourt -S jdk6-compat jdk7-compat jdk8-compat
+sudo archlinux-java set java-8-openjdk
 
 # install Leiningen
 mkdir -p $HOME/bin
