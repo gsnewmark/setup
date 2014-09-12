@@ -28,7 +28,7 @@ mv pacman.conf.tmp /etc/pacman.conf
 sudo pacman-key -r 4209170B
 sudo pacman-key --lsign-key 4209170B
 sudo pacman -Syy
-sudo pacman -S cabal-install ghc happy alex haddock haskell-ghc-mod haskell-stylish-haskell
+sudo pacman -S cabal-install ghc happy alex haskell-ghc-mod haskell-stylish-haskell
 
 # install Heroky toolbelt
 yaourt -S heroku-toolbelt
