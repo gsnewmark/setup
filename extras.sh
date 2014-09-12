@@ -32,7 +32,7 @@ yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 sudo pacman -S gnome-disk-utility
 
 # install Libre office
-sudo pacman -S libreoffice-base libreoffice-calc libreoffice-common libreoffice-draw libreoffice-gnome libreoffice-impress libreoffice-math libreoffice-writer libreoffice-en-GB libreoffice-uk
+sudo pacman -S libreoffice-fresh libreoffice-en-GB libreoffice-uk
 
 # install TexLive
 sudo pacman -S texlive-most texlive-lang
