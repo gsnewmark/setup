@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install DE + i3 WM
-yaourt -S xfce4 notify-osd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu-xft-fuzzy xboomx quickswitch-i3 compton feh ttf-font-awesome skb gvfs xorg-utils
+yaourt -S xfce4 notify-osd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu2 quickswitch-i3 compton feh ttf-font-awesome skb gvfs xorg-utils
 
 # install terminal emulator
 sudo pacman -S gnome-terminal
@@ -29,7 +29,7 @@ sudo pacman -S networkmanager network-manager-applet
 sudo systemctl enable NetworkManager.service
 
 # install themes, icons
-yaourt -S mediterraneannight-theme gtk-theme-numix-solarized faenza-icon-theme
+yaourt -S gtk-theme-numix-solarized faenza-icon-theme
 
 # install and enable lightdm
 sudo pacman -S lightdm lightdm-gtk3-greeter
