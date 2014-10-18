@@ -26,7 +26,7 @@ sudo systemctl enable NetworkManager-dispatcher
 sudo pacman -S wine
 
 # install Ubuntu font rendering patches
-yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
+yaourt -S freetype2-ubuntu fontconfig-ubuntu
 
 # install disk utility
 sudo pacman -S gnome-disk-utility
