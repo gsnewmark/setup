@@ -40,6 +40,9 @@ sudo usermod -a -G vboxusers $USER
 # install Vagrant
 yaourt -S vagrant-git
 
+# install Docker
+sudo pacman -S docker
+
 # install Node.js
 sudo pacman -S nodejs
 
