@@ -42,6 +42,7 @@ yaourt -S vagrant-git
 
 # install Docker
 sudo pacman -S docker
+sudo usermod -a -G docker gsnewmark
 
 # install Node.js
 sudo pacman -S nodejs
