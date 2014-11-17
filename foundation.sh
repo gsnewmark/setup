@@ -19,6 +19,11 @@ sudo pacman -S python python2
 # install useful utils
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync tree unzip the_silver_searcher net-tools multitail acpi
 
+# configure time synchronization
+sudo pacman -S ntp
+sudo systemctl enable ntpd.service
+sudo timedatectl set-ntp true
+
 # install editors
 sudo pacman -S emacs vim
 
