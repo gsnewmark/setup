@@ -51,7 +51,8 @@ yaourt -S intellij-idea-ultimate-edition
 sudo pacman -S ntfs-3g
 
 # install few funny utils
-yaourt -S archey lolcat
+sudo pacman -S archey3
+yaourt -S lolcat
 
 # install cool-retro-term
 yaourt -S aur/cool-retro-term-git
