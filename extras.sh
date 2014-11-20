@@ -28,6 +28,9 @@ sudo pacman -S wine
 # install Ubuntu font rendering patches
 yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
+# install font with emoji
+sudo pacman -S ttf-symbola
+
 # install disk utility
 sudo pacman -S gnome-disk-utility
 
