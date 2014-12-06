@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# install deadbeef and VLC
-sudo pacman -S vlc
+# install video player
+sudo pacman -S mpv
 
 # install mpd, mpd and ncmpcpp
 sudo pacman -S mpd mpc ncmpcpp

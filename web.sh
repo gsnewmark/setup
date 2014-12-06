@@ -33,9 +33,6 @@ sudo pacman -S icedtea-web-java7
 # install Dropbox
 yaourt -S dropbox
 
-# install SopCast player
-yaourt -S sopcast-player
-
 # install Mosh
 sudo pacman -S mosh
 
