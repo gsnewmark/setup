@@ -30,9 +30,6 @@ sudo pacman-key --lsign-key 4209170B
 sudo pacman -Syy
 sudo pacman -S cabal-install ghc happy alex haskell-ghc-mod haskell-stylish-haskell
 
-# install Heroky toolbelt
-yaourt -S heroku-toolbelt
-
 # install Virtualbox
 sudo pacman -S qt4 virtualbox
 sudo usermod -a -G vboxusers $USER
@@ -55,9 +52,6 @@ sudo pacman -S nginx
 
 # install TrueCrypt
 sudo pacman -S truecrypt
-
-# install Travis CI CLI utils
-yaourt -S ruby-travis
 
 # install TernJS and ESLint
 sudo npm install -g tern eslint

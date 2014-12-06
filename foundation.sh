@@ -17,7 +17,7 @@ chsh -s $(which zsh)
 sudo pacman -S python python2
 
 # install useful utils
-sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync tree unzip the_silver_searcher net-tools multitail acpi
+sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync tree unzip the_silver_searcher net-tools acpi
 
 # configure time synchronization
 sudo pacman -S ntp
