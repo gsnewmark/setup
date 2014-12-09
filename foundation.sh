@@ -21,8 +21,14 @@ sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync tre
 
 # configure time synchronization
 sudo pacman -S ntp
+sudo systemctl start ntpd.service
 sudo systemctl enable ntpd.service
 sudo timedatectl set-ntp true
+
+# generates system entropy
+sudo pacman -S haveged
+sudo systemctl start haveged
+sudo systemctl enable haveged
 
 # install editors
 sudo pacman -S emacs vim
