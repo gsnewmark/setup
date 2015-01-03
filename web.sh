@@ -8,6 +8,7 @@ update-desktop-database ~/.local/share/applications
 
 # install Chromium, Firefox, Tor Browser
 sudo pacman -S chromium firefox
+gpg --recv-keys 0x63FEE659
 yaourt -S tor-browser-en
 
 # install flash plugin and Pulse support
