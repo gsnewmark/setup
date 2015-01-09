@@ -9,6 +9,21 @@ sudo pacman -S xorg-server xorg-server-utils
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
 
+# install yaourt
+mkdir -p $HOME/tmp/aur
+cd $HOME/tmp/aur
+curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz
+tar zxvf package-query.tar.gz
+cd package-query
+makepkg -si
+cd ..
+curl -O https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
+tar zxvf yaourt.tar.gz
+cd yaourt
+makepkg -si
+cd $HOME
+rm -rf $HOME/tmp/aur
+
 # install zsh and set it as default shell
 sudo pacman -S zsh
 chsh -s $(which zsh)
