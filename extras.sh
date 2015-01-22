@@ -15,6 +15,7 @@ sudo chmod +x /etc/cron.daily/trim
 # TODO append only once
 # fix sound in Skype and volume control for DragonFly
 sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
+sudo sed -i 's/load-module module-role-cork/#load-module module-role-cork/' /etc/pulse/default.pa
 
 # install and start tlp
 sudo pacman -S tlp tlp-rdw
