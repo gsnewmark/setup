@@ -4,7 +4,7 @@
 yaourt -S xfce4 notify-osd xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu2 quickswitch-i3 compton feh ttf-font-awesome skb gvfs xorg-utils xdotool
 
 # install terminal emulator
-sudo pacman -S gnome-terminal
+yaourt -S termite-git
 
 # install archivers
 sudo pacman -S file-roller p7zip thunar-archive-plugin
