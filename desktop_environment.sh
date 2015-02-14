@@ -22,7 +22,7 @@ sudo pacman -S pulseaudio pavucontrol alsa-utils
 yaourt -S pa-applet-git
 
 # install document viewer
-sudo pacman -S evince eog
+sudo pacman -S eog zathura zathura-djvu zathura-ps zathura-pdf-mupdf
 
 # install and enable network manager
 sudo pacman -S networkmanager network-manager-applet
