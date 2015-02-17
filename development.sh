@@ -10,6 +10,10 @@ mkdir -p $HOME/bin
 wget -O $HOME/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
 chmod a+x $HOME/bin/lein
 
+# install Boot
+wget -O $HOME/bin/boot https://github.com/boot-clj/boot/releases/download/2.0.0-rc9/boot.sh
+chmod a+x $HOME/bin/boot
+
 # install sbt
 sudo pacman -S sbt
 
