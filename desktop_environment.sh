@@ -41,3 +41,7 @@ sudo pacman -S unclutter
 
 # integrate dropbox
 yaourt -S thunar-dropbox
+
+# add Fantasque Sans Mono with Cyrillic support
+cp ~/Dropbox/FantasqueSansMono-Regular.ttf ~/.fonts/
+fc-cache -fv
