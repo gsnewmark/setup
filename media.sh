@@ -19,3 +19,6 @@ sudo pacman -S rbutil
 
 # install GIMP
 sudo pacman -S gimp
+
+# install tools to split CD rips
+sudo pacman -S shntool cuetools
