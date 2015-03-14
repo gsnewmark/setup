@@ -54,8 +54,8 @@ sudo pacman -S phantomjs
 # install nginx
 sudo pacman -S nginx
 
-# install TrueCrypt
-sudo pacman -S truecrypt
+# install VeraCrypt
+yaourt -S veracrypt
 
 # install TernJS and ESLint
 sudo npm install -g tern eslint
