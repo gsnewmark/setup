@@ -59,3 +59,6 @@ yaourt -S veracrypt
 
 # install TernJS and ESLint
 sudo npm install -g tern eslint
+
+# install git flow extensions
+yaourt -S git-flow
