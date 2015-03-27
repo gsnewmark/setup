@@ -46,7 +46,7 @@ sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin lib32-libpuls
 sudo pacman -S steam
 
 # install Intellij Idea
-yaourt -S intellij-idea-14-community
+yaourt -S intellij-idea-ce-eap
 
 # install ntfs support
 sudo pacman -S ntfs-3g
