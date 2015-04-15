@@ -50,3 +50,6 @@ yaourt -S intellij-idea-ce-eap
 
 # install ntfs support
 sudo pacman -S ntfs-3g
+
+# install keybase CLI util
+yaourt -S keybase
