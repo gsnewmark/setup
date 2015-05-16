@@ -16,7 +16,7 @@ sudo pacman -S gedit
 sudo pacman -S highlight atool poppler mediainfo ranger w3m imlib2
 
 # install pulseaudio and pulse audio control panel
-sudo pacman -S pulseaudio pavucontrol alsa-utils
+sudo pacman -S pulseaudio pulseaudio-gconf pulseaudio-jack pavucontrol alsa-utils
 
 # install daemon for volume change handling
 yaourt -S pa-applet-git
