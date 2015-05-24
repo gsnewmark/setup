@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # install DE + i3 WM
-yaourt -S xfce4 dunst xfce4-screenshooter gnome-keyring i3-wm python-i3-git i3blocks dmenu2 quickswitch-i3 compton feh ttf-font-awesome skb gvfs xorg-utils xdotool udiskie
+yaourt -S xfce4 dunst xfce4-screenshooter gnome-keyring i3-wm python-i3-git \
+          i3blocks dmenu2 quickswitch-i3 compton feh ttf-font-awesome skb \
+          gvfs xorg-utils xdotool udiskie i3lock-wrapper bc
 
 # install terminal emulator
 yaourt -S termite
