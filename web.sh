@@ -28,6 +28,9 @@ sudo pacman -S transmission-gtk transmission-cli
 # install Skype + 32-bit GTK libs (for GTK themes support)
 sudo pacman -S skype lib32-gtk2
 
+# install unofficial Slack client
+yaourt -S scudcloud
+
 # install Java browser plugin
 sudo pacman -S icedtea-web-java7
 
