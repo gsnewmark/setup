@@ -6,13 +6,10 @@ yaourt -S jdk6-compat jdk7-compat jdk8-compat
 sudo archlinux-java set java-8-openjdk
 
 # install Leiningen
-mkdir -p $HOME/bin
-wget -O $HOME/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
-chmod a+x $HOME/bin/lein
+yaourt -S leiningen
 
 # install Boot
-wget -O $HOME/bin/boot https://github.com/boot-clj/boot/releases/download/2.0.0/boot.sh
-chmod a+x $HOME/bin/boot
+yaourt -S boot
 
 # install sbt
 sudo pacman -S sbt
