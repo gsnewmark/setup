@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install video driver
-sudo pacman -S xf86-video-intel lib32-mesa-libgl libva-intel-driver
+sudo pacman -S xf86-video-intel lib32-mesa-libgl mesa-libgl libva-intel-driver
 
 # install X.Org server
 sudo pacman -S xorg-server xorg-server-utils

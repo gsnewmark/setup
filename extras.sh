@@ -34,7 +34,8 @@ sudo pacman -S libreoffice-fresh libreoffice-en-GB libreoffice-uk
 sudo pacman -S texlive-most texlive-lang
 
 # install Steam
-sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin lib32-libpulse lib32-libpng12 lib32-libtheora pulseaudio-alsa
+sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin \
+               lib32-libpulse lib32-libpng12 lib32-libtheora pulseaudio-alsa
 sudo pacman -S steam
 
 # install Intellij Idea
