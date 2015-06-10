@@ -4,14 +4,6 @@
 sudo pacman -S cronie
 sudo systemctl enable cronie
 
-# enable TRIM support
-sudo mkdir /etc/cron.daily
-echo '#!/bin/sh
-LOG=/var/log/trim.log
-echo "*** $(date -R) ***" >> $LOG
-fstrim -v / >> $LOG' | sudo tee /etc/cron.daily/trim
-sudo chmod +x /etc/cron.daily/trim
-
 # TODO append only once
 # fix sound in Skype and volume control for DragonFly
 sudo sed -i 's/load-module module-udev-detect.*/& ignore_dB=1 tsched=0/' /etc/pulse/default.pa
