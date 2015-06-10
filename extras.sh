@@ -15,9 +15,6 @@ sudo systemctl enable tlp
 sudo systemctl enable tlp-sleep
 sudo systemctl enable NetworkManager-dispatcher
 
-# install wine
-sudo pacman -S wine
-
 # install Ubuntu font rendering patches
 yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
 
@@ -28,7 +25,7 @@ sudo pacman -S ttf-symbola
 sudo pacman -S gnome-disk-utility
 
 # install Libre office
-sudo pacman -S libreoffice-fresh libreoffice-en-GB libreoffice-uk
+sudo pacman -S libreoffice-fresh libreoffice-fresh-en-GB libreoffice-fresh-uk
 
 # install TexLive
 sudo pacman -S texlive-most texlive-lang
@@ -43,6 +40,3 @@ yaourt -S intellij-idea-ce-eap
 
 # install ntfs support
 sudo pacman -S ntfs-3g
-
-# install keybase CLI util
-yaourt -S keybase

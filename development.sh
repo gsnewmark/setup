@@ -2,7 +2,7 @@
 
 # install Java
 sudo pacman -S jdk7-openjdk openjdk7-doc openjdk7-src jdk8-openjdk openjdk8-doc openjdk8-src maven
-yaourt -S jdk6-compat jdk7-compat jdk8-compat
+yaourt -S jdk
 sudo archlinux-java set java-8-openjdk
 
 # install Leiningen
@@ -21,15 +21,14 @@ sudo pip install virtualenv
 
 # install Ruby
 sudo pacman -S ruby
-yaourt -S ruby-bundler
 
 # add Haskell-specific repo, install Haskell and some packages
-awk -v RS='' '/\[core\]/ { print; print "[haskell-core]"; print "Server = http://orbitalfox.com/haskell/core/$arch"; next }1' /etc/pacman.conf > pacman.conf.tmp && sudo
-mv pacman.conf.tmp /etc/pacman.conf
+awk -v RS='' '/\[core\]/ { print; print "[haskell-core]"; print "Server = http://orbitalfox.com/haskell/core/$arch"; next }1' /etc/pacman.conf > pacman.conf.tmp && \
+    sudo mv pacman.conf.tmp /etc/pacman.conf
 sudo pacman-key -r 4209170B
 sudo pacman-key --lsign-key 4209170B
 sudo pacman -Syy
-sudo pacman -S cabal-install ghc happy alex haskell-ghc-mod haskell-stylish-haskell haskell-hasktags
+sudo pacman -S cabal-install ghc happy alex haskell-stylish-haskell haskell-hasktags
 
 # install Virtualbox
 sudo pacman -S qt4 virtualbox
@@ -43,7 +42,7 @@ sudo pacman -S docker
 sudo usermod -a -G docker gsnewmark
 
 # install Node.js
-sudo pacman -S nodejs
+sudo pacman -S nodejs npm
 
 # install PhantomJS
 sudo pacman -S phantomjs
@@ -53,9 +52,6 @@ sudo pacman -S nginx
 
 # install VeraCrypt
 yaourt -S veracrypt
-
-# install TernJS and ESLint
-sudo npm install -g tern eslint
 
 # install git flow extensions
 yaourt -S git-flow

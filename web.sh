@@ -32,7 +32,7 @@ sudo pacman -S skype lib32-gtk2
 yaourt -S scudcloud
 
 # install Java browser plugin
-sudo pacman -S icedtea-web-java7
+sudo pacman -S icedtea-web
 
 # install Dropbox
 yaourt -S dropbox
@@ -45,3 +45,6 @@ sudo pacman -S networkmanager-vpnc networkmanager-openvpn
 
 # install Remmina remote desktop client
 sudo pacman -S remmina
+
+# install Keybase CLI util
+yaourt -S keybase

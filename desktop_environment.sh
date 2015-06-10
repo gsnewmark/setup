@@ -1,15 +1,16 @@
 #!/bin/bash
 
-# install DE + i3 WM
-yaourt -S xfce4 dunst xfce4-screenshooter gnome-keyring i3-wm python-i3-git \
-          i3blocks dmenu2 quickswitch-i3 compton feh ttf-font-awesome skb \
-          gvfs xorg-utils xdotool udisks2 udiskie i3lock-wrapper bc
+# install bspwm & various helpers 
+yaourt -S bspwm-git lemonbar-git sxhkd-git dunst dmenu2 \
+          xfce4-settings xfce4-screenshooter gnome-keyring \
+          compton feh ttf-font-awesome xorg-utils xdotool \
+          udisks2 udiskie i3lock-wrapper bc
 
 # install terminal emulator
 yaourt -S termite
 
 # install archivers
-sudo pacman -S file-roller p7zip thunar-archive-plugin
+sudo pacman -S file-roller p7zip
 
 # install GUI text editor
 sudo pacman -S gedit
@@ -34,12 +35,9 @@ sudo systemctl enable NetworkManager.service
 yaourt -S gtk-theme-numix-solarized faenza-icon-theme
 
 # install and enable lightdm
-sudo pacman -S lightdm lightdm-gtk3-greeter
+sudo pacman -S lightdm lightdm-gtk-greeter
 sudo cp $HOME/setup/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo systemctl enable lightdm.service
 
 # install unclutter (hides mouse cursor)
 sudo pacman -S unclutter
-
-# integrate dropbox
-yaourt -S thunar-dropbox

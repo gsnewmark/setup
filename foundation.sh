@@ -55,5 +55,5 @@ git clone git@github.com:gsnewmark/dotfiles.git
 cd dotfiles
 git submodule init
 git submodule update
-cd ..
 ./bootstrap
+cd ../setup
