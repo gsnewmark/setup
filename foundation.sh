@@ -35,6 +35,27 @@ sudo pacman -S python python2
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
                tree unzip the_silver_searcher net-tools acpi reflector
 
+# Enable reflector periodic job
+echo '[Unit]
+Description=Pacman mirrorlist update
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/reflector --protocol http --latest 30 --number 20 --sort rate --save /etc/pacman.d/mirrorlist' | sudo tee /etc/systemd/system/reflector.service
+
+echo '[Unit]
+Description=Run reflector weekly
+
+[Timer]
+OnCalendar=weekly
+AccuracySec=12h
+Persistent=true
+
+[Install]
+WantedBy=timers.target' | sudo tee /etc/systemd/system/reflector.timer
+
+systemctl enable reflector.timer
+
 # configure time synchronization
 sudo pacman -S ntp
 sudo systemctl start ntpd.service
