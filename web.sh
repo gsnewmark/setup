@@ -16,8 +16,7 @@ sudo pacman -S flashplugin
 yaourt -S libflashsupport-pulse
 
 # install Geary
-sudo pacman -S gnome-doc-utils gcr
-yaourt -S geary-git
+sudo pacman -S gnome-doc-utils gcr geary
 
 # install Corebird Twitter client
 yaourt -S corebird-git
