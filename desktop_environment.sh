@@ -26,6 +26,7 @@ yaourt -S pa-applet-git
 
 # install document viewer
 sudo pacman -S eog zathura zathura-djvu zathura-ps zathura-pdf-mupdf
+xdg-mime default zathura.desktop application/pdf
 
 # install and enable network manager
 sudo pacman -S networkmanager network-manager-applet
