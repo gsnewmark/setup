@@ -41,6 +41,9 @@ yaourt -S vagrant-git
 sudo pacman -S docker
 sudo usermod -a -G docker gsnewmark
 
+# install Fabric
+sudo pacman -S fabric
+
 # install Node.js
 sudo pacman -S nodejs npm
 
