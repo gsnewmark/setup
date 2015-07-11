@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# install i3 & various helpers 
+# install i3 & various helpers
 yaourt -S i3-wm python-i3-git i3blocks quickswitch-i3 dunst dmenu2 \
           xfce4-settings xfce4-screenshooter gnome-keyring \
-          compton feh ttf-font-awesome xorg-utils xdotool \
+          compton feh ttf-font-awesome ttf-ms-fonts xorg-utils xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git
 
 # install terminal emulator

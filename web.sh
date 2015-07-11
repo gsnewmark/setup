@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# install Conkeror and make it default browser
-yaourt -S conkeror-git
+# install qutebrowser and make it default browser
+yaourt -S qutebrowser
 mkdir -p ~/.local/share/applications
-cp conkeror.desktop ~/.local/share/applications/
+cp qutebrowser.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 
 # install Chromium, Firefox, Tor Browser
