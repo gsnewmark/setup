@@ -5,6 +5,8 @@ yaourt -S qutebrowser
 mkdir -p ~/.local/share/applications
 cp qutebrowser.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
+xdg-mime default qutebrowser.desktop x-scheme-handler/http
+xdg-mime default qutebrowser.desktop x-scheme-handler/https
 
 # install Chromium, Firefox, Tor Browser
 sudo pacman -S chromium firefox
