@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install video player
-sudo pacman -S mpv
+sudo pacman -S mpv youtube-dl
 
 # install mpd, mpd and ncmpcpp
 sudo pacman -S mpd mpc ncmpcpp
