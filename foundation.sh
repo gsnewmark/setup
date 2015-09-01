@@ -34,7 +34,7 @@ sudo pacman -S python python2
 # install useful utils
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
                tree unzip the_silver_searcher net-tools acpi reflector \
-               terminus-font dnsutils
+               terminus-font bind-tools
 
 # Enable reflector periodic job
 echo '[Unit]
