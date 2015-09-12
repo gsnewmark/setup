@@ -47,8 +47,9 @@ sudo usermod -a -G docker gsnewmark
 # install Fabric
 sudo pacman -S fabric
 
-# install Node.js
+# install Node.js and some JS utils
 sudo pacman -S nodejs npm
+yaourt -S nodejs-tern
 
 # install PhantomJS
 sudo pacman -S phantomjs
