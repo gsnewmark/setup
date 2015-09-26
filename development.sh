@@ -31,7 +31,7 @@ sudo pacman-key -r 4209170B
 sudo pacman-key --lsign-key 4209170B
 sudo pacman -Syy
 sudo pacman -S cabal-install ghc happy alex \
-     haskell-stylish-haskell haskell-hasktags haskell-ghc-mod
+     haskell-stylish-haskell haskell-hasktags haskell-ghc-mod haskell-hlint
 
 # install Virtualbox
 sudo pacman -S qt4 virtualbox

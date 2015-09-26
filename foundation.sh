@@ -9,6 +9,10 @@ sudo pacman -S xorg-server xorg-server-utils
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
 
+# install ncurses 5 compatibility
+gpg --recv-keys 702353E0F7E48EDB
+yaourt -S ncurses5-compat-libs
+
 # install yaourt
 mkdir -p $HOME/tmp/aur
 cd $HOME/tmp/aur
