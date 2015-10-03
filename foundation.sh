@@ -9,10 +9,6 @@ sudo pacman -S xorg-server xorg-server-utils
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
 
-# install ncurses 5 compatibility
-gpg --recv-keys 702353E0F7E48EDB
-yaourt -S ncurses5-compat-libs
-
 # install yaourt
 mkdir -p $HOME/tmp/aur
 cd $HOME/tmp/aur
@@ -39,6 +35,10 @@ sudo pacman -S python python2
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
                tree unzip the_silver_searcher net-tools acpi reflector \
                terminus-font bind-tools
+
+# install ncurses 5 compatibility
+gpg --recv-keys 702353E0F7E48EDB
+yaourt -S ncurses5-compat-libs
 
 # Enable reflector periodic job
 echo '[Unit]
