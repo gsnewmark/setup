@@ -17,9 +17,8 @@ yaourt -S boot
 sudo pacman -S sbt
 
 # install Python's setuptools, pip, virtualenv
-sudo pacman -S python-setuptools
-sudo easy_install pip
-sudo pip install virtualenv
+sudo pacman -S python-setuptools python-pip python2-pip \
+     python-virtualenv python2-virtualenv
 
 # install Ruby
 sudo pacman -S ruby
