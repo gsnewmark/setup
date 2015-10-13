@@ -18,7 +18,7 @@ sudo pacman -S sbt
 
 # install Python's setuptools, pip, virtualenv
 sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
-     python-virtualenv python2-virtualenv
+     python-virtualenv python2-virtualenv python-virtualenvwrapper
 
 # install Ruby
 sudo pacman -S ruby
