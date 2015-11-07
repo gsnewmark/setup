@@ -15,8 +15,16 @@ sudo systemctl enable tlp
 sudo systemctl enable tlp-sleep
 sudo systemctl enable NetworkManager-dispatcher
 
-# install Ubuntu font rendering patches
-yaourt -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu
+# install infinality-bundle
+sudo pacman-key -r 962DDE58
+sudo pacman-key --lsign-key 962DDE58
+echo "[infinality-bundle]" | sudo tee -a /etc/pacman.conf
+echo "Server = http://bohoomil.com/repo/\$arch" | sudo tee -a /etc/pacman.conf
+echo "[infinality-bundle-multilib]" | sudo tee -a /etc/pacman.conf
+echo "Server = http://bohoomil.com/repo/multilib/\$arch" | sudo tee -a /etc/pacman.conf
+echo "[infinality-bundle-fonts]" | sudo tee -a /etc/pacman.conf
+echo "Server = http://bohoomil.com/repo/fonts" | sudo tee -a /etc/pacman.conf
+sudo pacman -S infinality-bundle infinality-bundle-multilib ibfonts-meta-extended
 
 # install font with emoji
 sudo pacman -S ttf-symbola
