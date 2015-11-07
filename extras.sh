@@ -24,10 +24,11 @@ echo "[infinality-bundle-multilib]" | sudo tee -a /etc/pacman.conf
 echo "Server = http://bohoomil.com/repo/multilib/\$arch" | sudo tee -a /etc/pacman.conf
 echo "[infinality-bundle-fonts]" | sudo tee -a /etc/pacman.conf
 echo "Server = http://bohoomil.com/repo/fonts" | sudo tee -a /etc/pacman.conf
+sudo pacman -Syy
 sudo pacman -S infinality-bundle infinality-bundle-multilib ibfonts-meta-extended
 
 # install font with emoji
-sudo pacman -S ttf-symbola
+sudo pacman -S ttf-symbola-ib
 
 # install disk utility
 sudo pacman -S gnome-disk-utility
@@ -39,7 +40,7 @@ sudo pacman -S libreoffice-fresh libreoffice-fresh-en-GB libreoffice-fresh-uk
 sudo pacman -S texlive-most texlive-lang
 
 # install Steam
-sudo pacman -S ttf-liberation lib32-alsa-plugins lib32-flashplugin \
+sudo pacman -S ttf-liberation-ib lib32-alsa-plugins lib32-flashplugin \
                lib32-libpulse lib32-libpng12 lib32-libtheora pulseaudio-alsa
 sudo pacman -S steam
 
