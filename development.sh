@@ -58,7 +58,7 @@ sudo pacman -S phantomjs
 sudo pacman -S nginx
 
 # install VeraCrypt
-gpg --keyserver keys.gnupg.net --recv-keys EB559C7C54DDD393
+gpg --keyserver keys.gnupg.net --recv-keys 8F1C633328F64DD0
 yaourt -S veracrypt
 
 # install git flow extensions
