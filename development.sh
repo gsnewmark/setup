@@ -24,7 +24,7 @@ sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
 sudo pacman -S ruby
 
 # add Haskell-specific repo, install Haskell and some packages
-awk -v RS='' '/\[core\]/ { print; print "[haskell-core]"; print "Server = http://orbitalfox.com/haskell/core/$arch"; next }1' /etc/pacman.conf > pacman.conf.tmp && \
+awk -v RS='' '/\[core\]/ { print; print "[haskell-core]"; print "Server = http://xsounds.org/~haskell/core/$arch"; next }1' /etc/pacman.conf > pacman.conf.tmp && \
     sudo mv pacman.conf.tmp /etc/pacman.conf
 sudo pacman-key -r 4209170B
 sudo pacman-key --lsign-key 4209170B
