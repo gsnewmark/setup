@@ -44,8 +44,5 @@ sudo pacman -S ttf-liberation-ib lib32-alsa-plugins lib32-flashplugin \
                lib32-libpulse lib32-libpng12 lib32-libtheora pulseaudio-alsa
 sudo pacman -S steam
 
-# install Intellij Idea
-yaourt -S intellij-idea-ce-eap
-
 # install ntfs support
 sudo pacman -S ntfs-3g
