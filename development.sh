@@ -51,6 +51,9 @@ sudo pacman -S fabric
 sudo pacman -S nodejs npm
 yaourt -S nodejs-tern
 
+# install JS build tools
+sudo pacman -S gulp
+
 # install PhantomJS
 sudo pacman -S phantomjs
 
