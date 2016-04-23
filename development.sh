@@ -8,6 +8,8 @@ yaourt -S jdk
 sudo archlinux-java set java-8-openjdk
 
 # install Leiningen
+gpg --recv-keys 5A92E04305696D78
+gpg --lsign-key 5A92E04305696D78
 yaourt -S leiningen
 
 # install Boot
