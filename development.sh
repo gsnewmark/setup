@@ -66,6 +66,3 @@ sudo pacman -S nginx
 gpg --keyserver pgp.mit.edu --recv-keys D99E28F9CD1C0389
 gpg --lsign-key D99E28F9CD1C0389
 yaourt -S veracrypt
-
-# install git flow extensions
-yaourt -S git-flow
