@@ -40,7 +40,7 @@ sudo pacman -S qt4 virtualbox
 sudo usermod -a -G vboxusers $USER
 
 # install Vagrant
-yaourt -S vagrant-git
+sudo pacman -S vagrant
 
 # install Docker
 sudo pacman -S docker
