@@ -40,8 +40,8 @@ sudo pacman -S libreoffice-fresh libreoffice-fresh-en-GB libreoffice-fresh-uk
 sudo pacman -S texlive-most texlive-lang
 
 # install Steam
-sudo pacman -S ttf-liberation-ib lib32-alsa-plugins lib32-flashplugin \
-               lib32-libpulse lib32-libpng12 lib32-libtheora pulseaudio-alsa
+yaourt -S ttf-liberation-ib lib32-alsa-plugins lib32-flashplugin \
+       lib32-libpulse lib32-libpng12 lib32-libtheora pulseaudio-alsa
 sudo pacman -S steam
 
 # install ntfs support
