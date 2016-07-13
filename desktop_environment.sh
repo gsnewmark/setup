@@ -38,6 +38,7 @@ sudo systemctl enable NetworkManager.service
 yaourt -S faenza-icon-theme
 sudo wget https://github.com/gsnewmark/numix-solarized-dark-gtk-theme/releases/download/10072016-2/NumixSolarizedDark.zip -O /usr/share/themes/NumixSolarizedDark.zip
 sudo unzip /usr/share/themes/NumixSolarizedDark.zip -d /usr/share/themes/
+sudo rm /usr/share/themes/NumixSolarizedDark.zip
 
 # install and enable lightdm
 sudo pacman -S lightdm lightdm-gtk-greeter
