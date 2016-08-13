@@ -67,5 +67,5 @@ gpg --keyserver pgp.mit.edu --recv-keys D99E28F9CD1C0389
 gpg --lsign-key D99E28F9CD1C0389
 yaourt -S veracrypt
 
-# install Erlang & Elixir
-sudo pacman -S erlang elixir
+# install Erlang
+sudo pacman -S erlang
