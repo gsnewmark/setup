@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# install i3 & various helpers & fonts
+# install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
 yaourt -S i3-wm python-i3-git i3blocks quickswitch-i3 dunst dmenu2 \
           xfce4-settings xfce4-screenshooter gnome-keyring \
           compton feh ttf-font-awesome ttf-ms-fonts xorg-utils xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git \
           perl-file-mimeinfo otf-source-code-pro-ibx ttf-mplus-ibx ttf-hack-ibx \
-          notify-desktop-git
+          notify-desktop-git lib32-gtk2
 
 # install terminal emulator
 yaourt -S termite
