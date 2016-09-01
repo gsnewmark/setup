@@ -63,3 +63,8 @@ yaourt -S veracrypt
 
 # install Erlang
 sudo pacman -S erlang
+
+# install Rust
+yaourt -S rustup rust-src
+rustup default stable
+cargo install racer
