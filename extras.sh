@@ -46,3 +46,8 @@ sudo pacman -S steam
 
 # install ntfs support
 sudo pacman -S ntfs-3g
+
+# install tools for planck firmware flashing
+sudo pacman -S avr-gcc avr-binutils avr-libc dfu-utils \
+     arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib
+yaourt -S dfu-programmer
