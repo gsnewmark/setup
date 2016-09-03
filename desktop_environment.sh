@@ -8,6 +8,16 @@ yaourt -S i3-wm python-i3-git i3blocks dunst rofi \
           perl-file-mimeinfo otf-source-code-pro-ibx ttf-mplus-ibx ttf-hack-ibx \
           notify-desktop-git lib32-gtk2
 
+# install San Francisco font
+wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip -O YosemiteSanFranciscoFont-master.zip
+unzip YosemiteSanFranciscoFont-master.zip
+cd YosemiteSanFranciscoFont-master
+chmod 755 *.ttf
+mv *.ttf ~/.fonts/
+cd ..
+rm -rf YosemiteSanFranciscoFont-master*
+fc-cache -fv
+
 # install terminal emulator
 yaourt -S termite
 
