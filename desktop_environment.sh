@@ -6,7 +6,7 @@ yaourt -S i3-wm python-i3-git i3blocks dunst rofi \
           compton feh ttf-font-awesome ttf-ms-fonts xorg-utils xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git \
           perl-file-mimeinfo otf-source-code-pro-ibx ttf-mplus-ibx ttf-hack-ibx \
-          notify-desktop-git lib32-gtk2
+          notify-desktop-git lib32-gtk2 gtk-engine-murrine
 
 # install San Francisco font
 wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip -O YosemiteSanFranciscoFont-master.zip
