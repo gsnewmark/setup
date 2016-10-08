@@ -68,3 +68,4 @@ sudo pacman -S erlang
 yaourt -S rustup rust-src
 rustup default stable
 cargo install racer
+cargo install rustfmt
