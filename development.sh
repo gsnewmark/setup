@@ -65,7 +65,5 @@ yaourt -S veracrypt
 sudo pacman -S erlang
 
 # install Rust
-yaourt -S rustup rust-src
+yaourt -S rustup rust-src rust-racer rustfmt
 rustup default stable
-cargo install racer
-cargo install rustfmt
