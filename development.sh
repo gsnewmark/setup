@@ -7,6 +7,9 @@ sudo pacman -S jdk7-openjdk openjdk7-doc openjdk7-src \
 yaourt -S jdk
 sudo archlinux-java set java-8-openjdk
 
+# install MAT
+yaourt -S eclipse-mat
+
 # install Leiningen
 gpg --recv-keys 5A92E04305696D78
 gpg --lsign-key 5A92E04305696D78
