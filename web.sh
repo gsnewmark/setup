@@ -50,3 +50,6 @@ sudo pacman -S remmina
 
 # install Keybase CLI util
 yaourt -S keybase
+
+# install S3 CLI util
+sudo pacman -S s3cmd
