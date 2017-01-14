@@ -3,10 +3,12 @@
 # install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
 yaourt -S i3-wm python-i3-git i3blocks dunst rofi \
           xfce4-settings xfce4-screenshooter gnome-keyring \
-          compton feh ttf-font-awesome ttf-ms-fonts xorg-utils xdotool \
-          udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git \
-          perl-file-mimeinfo otf-source-code-pro-ibx ttf-mplus-ibx ttf-hack-ibx \
-          notify-desktop-git lib32-gtk2 gtk-engine-murrine
+          compton feh xorg-utils xdotool \
+          udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git perl-file-mimeinfo \
+          notify-desktop-git lib32-gtk2 gtk-engine-murrine \
+          adobe-source-code-pro-fonts ttf-mplus ttf-hack \
+          ttf-symbola-ib ttf-font-awesome ttf-ms-fonts\
+          freetype2 fontconfig lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install San Francisco font
 wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip -O YosemiteSanFranciscoFont-master.zip
