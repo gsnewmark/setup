@@ -30,7 +30,7 @@ sudo pacman -S file-roller p7zip
 sudo pacman -S gedit
 
 # install ranger file manager and apps for enhanced functionality
-sudo pacman -S highlight atool poppler mediainfo ranger w3m imlib2
+sudo pacman -S highlight atool poppler mediainfo ranger w3m imlib2 ffmpegthumbnailer
 
 # install pulseaudio and pulse audio control panel
 sudo pacman -S pulseaudio pulseaudio-gconf pulseaudio-jack pavucontrol alsa-utils
