@@ -11,7 +11,7 @@ xdg-mime default qutebrowser.desktop x-scheme-handler/https
 
 # install Chromium, Firefox, Tor Browser
 sudo pacman -S chromium firefox
-gpg --keyserver pgp.mit.edu --recv-keys 0x4E2C6E8793298290
+gpg --keyserver pool.sks-keyservers.net --recv-keys D1483FA6C3C07136
 yaourt -S tor-browser-en
 
 # install flash plugin and Pulse support
