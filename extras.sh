@@ -39,3 +39,6 @@ sudo pacman -S exfat-utils
 sudo pacman -S avr-gcc avr-binutils avr-libc dfu-utils \
      arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib
 yaourt -S dfu-programmer
+
+# install markdown (for Emacs Markdown export)
+sudo pacman -S markdown
