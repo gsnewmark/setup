@@ -7,7 +7,7 @@ yaourt -S i3-wm python-i3-git i3blocks dunst rofi \
           udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git perl-file-mimeinfo \
           notify-desktop-git lib32-gtk2 gtk-engine-murrine \
           adobe-source-code-pro-fonts ttf-mplus ttf-hack \
-          ttf-symbola-ib ttf-font-awesome ttf-ms-fonts\
+          ttf-symbola ttf-font-awesome ttf-ms-fonts\
           freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install San Francisco font
