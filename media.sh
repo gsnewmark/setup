@@ -22,3 +22,6 @@ sudo pacman -S gimp
 
 # install tools to split CD rips
 sudo pacman -S shntool cuetools
+
+# install tools to work with music tags
+sudo pacman -S easytag mp3unicode
