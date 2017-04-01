@@ -73,3 +73,9 @@ sudo pacman -S erlang
 # install Rust
 yaourt -S rustup rust-src rust-racer rustfmt
 rustup default stable
+
+# install Go & tools for building projects
+sudo pacman -S go
+yaourt -S gb
+go get github.com/GeertJohan/go.rice
+go get github.com/GeertJohan/go.rice/rice
