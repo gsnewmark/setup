@@ -14,6 +14,13 @@ sudo pacman -S chromium firefox
 gpg --keyserver pool.sks-keyservers.net --recv-keys D1483FA6C3C07136
 yaourt -S tor-browser-en
 
+# download old Firefox for Java applets
+mkdir -p $HOME/opt/
+cd $HOME/opt/
+wget https://ftp.mozilla.org/pub/firefox/releases/42.0/linux-x86_64/en-US/firefox-42.0.tar.bz2
+tar jxf firefox-42.0.tar.bz2
+rm firefox-42.0.tar.bz2
+
 # install flash plugin and Pulse support
 sudo pacman -S flashplugin
 yaourt -S libflashsupport-pulse
