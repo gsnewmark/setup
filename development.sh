@@ -43,7 +43,7 @@ sudo usermod -a -G vboxusers $USER
 sudo pacman -S vagrant
 
 # install Docker
-sudo pacman -S docker
+sudo pacman -S docker docker-compose
 sudo usermod -a -G docker gsnewmark
 
 # install Fabric
