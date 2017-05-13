@@ -49,3 +49,6 @@ yaourt -S zoom
 
 # install tcpdump & Wireshark
 sudo pacman -S tcpdump wireshark-gtk
+
+# install Android (MTP) file uploader
+sudo pacman -S android-file-transfer
