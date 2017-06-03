@@ -7,9 +7,9 @@ sudo pacman -S mpv youtube-dl
 sudo pacman -S mpd mpc ncmpcpp
 mkdir -p $HOME/.mpd/playlists
 touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
-yaourt -S mpdscribble
-mkdir $HOME/.mpdscribble
-cp /usr/share/mpdscribble/mpdscribble.conf.example $HOME/.mpdscribble/mpdscribble.conf
+yaourt -S mpdas
+cp /etc/mpdasrc $HOME/.mpdasrc
+echo "Don't forget to update the mpdas scrobbler config manually"
 
 # install Calibre
 sudo pacman -S calibre
