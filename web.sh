@@ -29,7 +29,7 @@ yaourt -S libflashsupport-pulse
 sudo pacman -S gnome-doc-utils gcr geary
 
 # install Corebird Twitter client
-yaourt -S corebird-git
+yaourt -S corebird
 
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
