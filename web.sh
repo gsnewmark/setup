@@ -27,7 +27,7 @@ sudo pacman -S flashplugin
 yaourt -S libflashsupport-pulse
 
 # install email client
-sudo pacman -S thundedrbird
+sudo pacman -S thunderbird
 cd $HOME/.thunderbird/*.default
 wget https://github.com/spymastermatt/thunderbird-monterail/archive/master.zip
 unzip master.zip
