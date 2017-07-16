@@ -20,13 +20,21 @@ cd $HOME/opt/
 wget https://ftp.mozilla.org/pub/firefox/releases/42.0/linux-x86_64/en-US/firefox-42.0.tar.bz2
 tar jxf firefox-42.0.tar.bz2
 rm firefox-42.0.tar.bz2
+cd $HOME
 
 # install flash plugin and Pulse support
 sudo pacman -S flashplugin
 yaourt -S libflashsupport-pulse
 
-# install Geary
-sudo pacman -S gnome-doc-utils gcr geary
+# install email client
+sudo pacman -S thundedrbird
+cd $HOME/.thunderbird/*.default
+wget https://github.com/spymastermatt/thunderbird-monterail/archive/master.zip
+unzip master.zip
+rm master.zip
+mv thunderbird-monterail-master chrome
+echo '@import "icons/lightIcons.css";' >> chrome/userChrome.css
+cd $HOME
 
 # install Corebird Twitter client
 yaourt -S corebird
