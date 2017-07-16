@@ -28,6 +28,9 @@ yaourt -S libflashsupport-pulse
 
 # install email client
 sudo pacman -S thunderbird
+thunderbird &
+last_pid=$!
+kill -KILL $last_pid
 cd $HOME/.thunderbird/*.default
 wget https://github.com/spymastermatt/thunderbird-monterail/archive/master.zip
 unzip master.zip
