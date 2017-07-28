@@ -71,3 +71,6 @@ yaourt -S keybase
 
 # install S3 CLI util
 sudo pacman -S s3cmd
+
+# install mitmproxy
+sudo pacman -S mitmproxy
