@@ -20,6 +20,9 @@ sudo pacman -S rbutil
 # install GIMP
 sudo pacman -S gimp
 
+# install vector graphics editor
+sudo pacman -S inkscape
+
 # install tools to split CD rips
 sudo pacman -S shntool cuetools
 

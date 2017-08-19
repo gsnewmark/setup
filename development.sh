@@ -31,6 +31,9 @@ sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
 # install Ruby
 sudo pacman -S ruby
 
+# install some Ruby-based tools
+yaourt -S ruby-sass
+
 # install Haskell and some packages
 sudo pacman -S cabal-install ghc happy alex stack \
      stylish-haskell hasktags ghc-mod hlint
