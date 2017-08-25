@@ -83,3 +83,6 @@ sudo pacman -S go
 yaourt -S gb
 go get github.com/GeertJohan/go.rice
 go get github.com/GeertJohan/go.rice/rice
+
+# install gdb
+sudo pacman -S gdb
