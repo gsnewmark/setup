@@ -38,6 +38,9 @@ yaourt -S ruby-sass
 sudo pacman -S cabal-install ghc happy alex stack \
      stylish-haskell hasktags ghc-mod hlint
 
+# install Idris
+sudo pacman -S idris
+
 # install Virtualbox
 sudo pacman -S qt4 virtualbox
 sudo usermod -a -G vboxusers $USER
