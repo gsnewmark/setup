@@ -4,7 +4,7 @@
 sudo pacman -S xf86-video-intel lib32-mesa-libgl mesa-libgl libva-intel-driver
 
 # install X.Org server
-sudo pacman -S xorg-server xorg-server-utils
+sudo pacman -S xorg-server xorg-xbacklight xorg-xinput xorg-xmodmap xorg-xrandrxorg-xset
 
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
@@ -59,7 +59,7 @@ Persistent=true
 [Install]
 WantedBy=timers.target' | sudo tee /etc/systemd/system/reflector.timer
 
-systemctl enable reflector.timer
+sudo systemctl enable reflector.timer
 
 # configure time synchronization
 sudo pacman -S ntp
