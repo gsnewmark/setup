@@ -22,9 +22,8 @@ tar jxf firefox-42.0.tar.bz2
 rm firefox-42.0.tar.bz2
 cd $HOME
 
-# install flash plugin and Pulse support
+# install flash plugin
 sudo pacman -S flashplugin
-yaourt -S libflashsupport-pulse
 
 # install email client
 sudo pacman -S thunderbird
@@ -74,3 +73,6 @@ sudo pacman -S s3cmd
 
 # install mitmproxy
 sudo pacman -S mitmproxy
+
+# install Zoom client
+yaourt -S zoom

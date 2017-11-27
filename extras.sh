@@ -43,9 +43,6 @@ yaourt -S dfu-programmer
 # install markdown (for Emacs Markdown export)
 sudo pacman -S markdown
 
-# install Zoom client
-yaourt -S zoom
-
 # install tcpdump & Wireshark
 sudo pacman -S tcpdump wireshark-gtk
 
