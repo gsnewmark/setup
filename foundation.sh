@@ -4,7 +4,7 @@
 sudo pacman -S xf86-video-intel lib32-mesa-libgl mesa-libgl libva-intel-driver
 
 # install X.Org server
-sudo pacman -S xorg-server xorg-xbacklight xorg-xinput xorg-xmodmap xorg-xrandrxorg-xset
+sudo pacman -S xorg-server xorg-xbacklight xorg-xinput xorg-xmodmap xorg-xrandr xorg-xset
 
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
