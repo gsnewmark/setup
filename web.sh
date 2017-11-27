@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install qutebrowser and make it default browser
-sudo pacman -S qt5-webkit-ng python-opengl qutebrowser
+sudo pacman -S python-opengl qutebrowser
 mkdir -p ~/.local/share/applications
 cp qutebrowser.desktop ~/.local/share/applications/
 sudo cp qutebrowser.desktop /usr/share/applications/
