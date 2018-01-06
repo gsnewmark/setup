@@ -18,9 +18,6 @@ yaourt -S leiningen
 # install Boot
 yaourt -S boot
 
-# install Planck CLJS REPL
-yaourt -S planck-git
-
 # install sbt
 sudo pacman -S sbt
 
