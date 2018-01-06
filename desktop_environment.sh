@@ -2,7 +2,7 @@
 
 # install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
 yaourt -S i3-wm i3blocks dunst rofi \
-          xfce4-settings xfce4-screenshooter gnome-keyring \
+          xfce4-settings xfce4-screenshooter flameshot gnome-keyring \
           compton feh xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git perl-file-mimeinfo \
           notify-desktop-git lib32-gtk2 gtk-engine-murrine \
