@@ -74,9 +74,10 @@ yaourt -S veracrypt
 sudo pacman -S erlang
 
 # install Rust
-yaourt -S rustup rust-racer rustfmt
+yaourt -S rustup rust-racer
 rustup default stable
 rustup component add rust-src
+rustup component add rustfmt-preview
 
 # install Go & tools for building projects
 sudo pacman -S go
