@@ -39,7 +39,7 @@ yaourt -S corebird
 sudo pacman -S transmission-gtk transmission-cli
 
 # install Skype
-yaourt -S skypeforlinux-bin
+yaourt -S skypeforlinux-stable-bin
 
 # install Slack client
 yaourt -S slack-desktop
