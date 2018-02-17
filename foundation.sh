@@ -9,17 +9,11 @@ sudo pacman -S xorg-server xorg-xbacklight xorg-xinput xorg-xmodmap xorg-xrandr 
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
 
-# install yaourt
+# install trizen
 mkdir -p $HOME/tmp/aur
 cd $HOME/tmp/aur
-curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz
-tar zxvf package-query.tar.gz
-cd package-query
-makepkg -si
-cd ..
-curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz
-tar zxvf yaourt.tar.gz
-cd yaourt
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
 makepkg -si
 cd $HOME
 rm -rf $HOME/tmp/aur
