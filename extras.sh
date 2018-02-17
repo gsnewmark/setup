@@ -26,7 +26,7 @@ sudo pacman -S texlive-most texlive-lang
 
 # install Steam
 gpg --keyserver pgp.mit.edu --recv-keys FCF986EA15E6E293A5644F10B4322F04D67658D8
-yaourt -S ttf-liberation-ib steam-native-runtime pulseaudio-alsa ffmpeg-compat-54
+yaourt -S ttf-liberation steam-native-runtime pulseaudio-alsa ffmpeg-compat-54
 sudo pacman -S steam
 
 # install ntfs support
