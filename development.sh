@@ -18,6 +18,9 @@ yaourt -S leiningen
 # install Boot
 yaourt -S boot
 
+# install Clojure
+sudo pacman -S clojure rlwrap
+
 # install sbt
 sudo pacman -S sbt
 
