@@ -60,7 +60,7 @@ sudo pacman -S networkmanager-vpnc networkmanager-openvpn
 sudo pacman -S remmina
 
 # install Keybase CLI util
-trizen -S keybase
+sudo pacman -S keybase
 
 # install S3 CLI util
 sudo pacman -S s3cmd
