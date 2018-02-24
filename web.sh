@@ -6,7 +6,7 @@ sudo pacman -S python-opengl qutebrowser
 # install Chromium, Firefox, Tor Browser
 sudo pacman -S chromium firefox
 gpg --keyserver pool.sks-keyservers.net --recv-keys D1483FA6C3C07136
-yaourt -S tor-browser-en
+trizen -S tor-browser-en
 
 # download old Firefox for Java applets
 mkdir -p $HOME/opt/
@@ -33,22 +33,22 @@ echo '@import "icons/lightIcons.css";' >> chrome/userChrome.css
 cd $HOME
 
 # install Corebird Twitter client
-yaourt -S corebird
+trizen -S corebird
 
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
 
 # install Skype
-yaourt -S skypeforlinux-stable-bin
+trizen -S skypeforlinux-stable-bin
 
 # install Slack client
-yaourt -S slack-desktop
+trizen -S slack-desktop
 
 # install Java browser plugin
 sudo pacman -S icedtea-web
 
 # install Dropbox
-yaourt -S dropbox
+trizen -S dropbox
 
 # install Mosh
 sudo pacman -S mosh
@@ -60,7 +60,7 @@ sudo pacman -S networkmanager-vpnc networkmanager-openvpn
 sudo pacman -S remmina
 
 # install Keybase CLI util
-yaourt -S keybase
+trizen -S keybase
 
 # install S3 CLI util
 sudo pacman -S s3cmd
@@ -69,4 +69,4 @@ sudo pacman -S s3cmd
 sudo pacman -S mitmproxy
 
 # install Zoom client
-yaourt -S zoom
+trizen -S zoom

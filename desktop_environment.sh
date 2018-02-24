@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
-yaourt -S i3-wm i3blocks dunst rofi \
+trizen -S i3-wm i3blocks dunst rofi \
           xfce4-settings xfce4-screenshooter flameshot gnome-keyring \
           compton feh xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git perl-file-mimeinfo \
@@ -21,7 +21,7 @@ rm -rf YosemiteSanFranciscoFont-master*
 fc-cache -fv
 
 # install terminal emulator
-yaourt -S termite
+sudo pacman -S termite
 
 # install archivers
 sudo pacman -S file-roller p7zip
@@ -36,7 +36,7 @@ sudo pacman -S highlight atool poppler mediainfo ranger w3m imlib2 ffmpegthumbna
 sudo pacman -S pulseaudio pulseaudio-gconf pulseaudio-jack pavucontrol alsa-utils
 
 # install daemon for volume change handling
-yaourt -S pa-applet-git
+trizen -S pa-applet-git
 
 # install document viewer
 sudo pacman -S eog zathura zathura-djvu zathura-ps zathura-pdf-mupdf
@@ -47,7 +47,7 @@ sudo pacman -S networkmanager network-manager-applet
 sudo systemctl enable NetworkManager.service
 
 # install themes, icons
-yaourt -S faenza-icon-theme
+trizen -S faenza-icon-theme
 sudo wget https://github.com/gsnewmark/numix-solarized-dark-gtk-theme/releases/download/19082017/NumixSolarizedDark.zip -O /usr/share/themes/NumixSolarizedDark.zip
 sudo unzip /usr/share/themes/NumixSolarizedDark.zip -d /usr/share/themes/
 sudo rm /usr/share/themes/NumixSolarizedDark.zip

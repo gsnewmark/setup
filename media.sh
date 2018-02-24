@@ -7,7 +7,7 @@ sudo pacman -S mpv youtube-dl
 sudo pacman -S mpd mpc ncmpcpp
 mkdir -p $HOME/.mpd/playlists
 touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
-yaourt -S mpdas
+trizen -S mpdas
 cp /etc/mpdasrc $HOME/.mpdasrc
 echo "Don't forget to update the mpdas scrobbler config manually"
 

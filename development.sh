@@ -4,19 +4,19 @@
 sudo pacman -S jdk7-openjdk openjdk7-doc openjdk7-src \
      jdk8-openjdk openjdk8-doc openjdk8-src \
      maven visualvm
-yaourt -S jdk
+trizen -S jdk
 sudo archlinux-java set java-8-openjdk
 
 # install MAT
-yaourt -S eclipse-mat
+trizen -S eclipse-mat
 
 # install Leiningen
 gpg --recv-keys 5A92E04305696D78
 gpg --lsign-key 5A92E04305696D78
-yaourt -S leiningen
+trizen -S leiningen
 
 # install Boot
-yaourt -S boot
+trizen -S boot
 
 # install Clojure
 sudo pacman -S clojure rlwrap
@@ -32,7 +32,7 @@ sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
 sudo pacman -S ruby
 
 # install some Ruby-based tools
-yaourt -S ruby-sass
+trizen -S ruby-sass
 
 # install Haskell and some packages
 sudo pacman -S cabal-install ghc happy alex stack \
@@ -57,7 +57,7 @@ sudo pacman -S fabric
 
 # install Node.js and some JS utils
 sudo pacman -S nodejs npm
-yaourt -S nodejs-tern
+trizen -S nodejs-tern
 
 # install JS build tools
 sudo pacman -S gulp
@@ -71,20 +71,20 @@ sudo pacman -S nginx
 # install VeraCrypt
 gpg --keyserver pgp.mit.edu --recv-keys D99E28F9CD1C0389
 gpg --lsign-key D99E28F9CD1C0389
-yaourt -S veracrypt
+trizen -S veracrypt
 
 # install Erlang
 sudo pacman -S erlang
 
 # install Rust
-yaourt -S rustup rust-racer
+sudo pacman -S rustup rust-racer
 rustup default stable
 rustup component add rust-src
 rustup component add rustfmt-preview
 
 # install Go & tools for building projects
 sudo pacman -S go
-yaourt -S gb
+trizen -S gb
 go get github.com/GeertJohan/go.rice
 go get github.com/GeertJohan/go.rice/rice
 

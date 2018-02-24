@@ -26,7 +26,7 @@ sudo pacman -S texlive-most texlive-lang
 
 # install Steam
 gpg --keyserver pgp.mit.edu --recv-keys FCF986EA15E6E293A5644F10B4322F04D67658D8
-yaourt -S ttf-liberation steam-native-runtime pulseaudio-alsa ffmpeg-compat-54
+trizen -S ttf-liberation steam-native-runtime pulseaudio-alsa ffmpeg-compat-54
 sudo pacman -S steam
 
 # install ntfs support
@@ -38,7 +38,7 @@ sudo pacman -S exfat-utils
 # install tools for planck firmware flashing
 sudo pacman -S avr-gcc avr-binutils avr-libc dfu-utils \
      arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib
-yaourt -S dfu-programmer
+trizen -S dfu-programmer
 
 # install markdown (for Emacs Markdown export)
 sudo pacman -S markdown
