@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
-trizen -S i3-wm i3blocks dunst rofi \
-          xfce4-settings xfce4-screenshooter flameshot gnome-keyring \
+trizen -S i3-wm dunst rofi \
+          polybar alsa-lib libmpdclient jsoncpp \
+          xfce4-settings flameshot gnome-keyring \
           compton feh xdotool \
-          udisks2 udiskie i3lock-wrapper bc polkit xkb-switch-git perl-file-mimeinfo \
+          udisks2 udiskie i3lock-wrapper bc polkit perl-file-mimeinfo \
           notify-desktop-git lib32-gtk2 gtk-engine-murrine \
           adobe-source-code-pro-fonts ttf-mplus ttf-hack \
-          ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family\
+          ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
           freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install San Francisco font
