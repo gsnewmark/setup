@@ -62,9 +62,6 @@ trizen -S nodejs-tern
 # install JS build tools
 sudo pacman -S gulp
 
-# install PhantomJS
-sudo pacman -S phantomjs
-
 # install nginx
 sudo pacman -S nginx
 
