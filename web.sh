@@ -32,9 +32,6 @@ mv thunderbird-monterail-master chrome
 echo '@import "icons/lightIcons.css";' >> chrome/userChrome.css
 cd $HOME
 
-# install Corebird Twitter client
-trizen -S corebird
-
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
 
