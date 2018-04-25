@@ -41,6 +41,9 @@ trizen -S skypeforlinux-stable-bin
 # install Slack client
 trizen -S slack-desktop
 
+# install Telegram
+sudo pacman -S telegram-desktop
+
 # install Java browser plugin
 sudo pacman -S icedtea-web
 
