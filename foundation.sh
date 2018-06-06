@@ -77,3 +77,19 @@ git submodule init
 git submodule update
 ./bootstrap
 cd ../setup
+
+# Enable lock on suspend
+echo '[Unit]
+Description=Lock X session for user %i
+Before=sleep.target
+
+[Service]
+User=%i
+Environment=DISPLAY=:0
+ExecStartPre=/usr/bin/xset dpms force suspend
+ExecStart=/home/gsnewmark/bin/pm lock
+
+[Install]
+WantedBy=sleep.target' | sudo tee /etc/systemd/system/lock@.service
+
+sudo systemctl enable lock@gsnewmark.service
