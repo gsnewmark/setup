@@ -2,7 +2,7 @@
 
 # install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
 trizen -S i3-wm dunst rofi \
-          polybar alsa-lib libmpdclient jsoncpp \
+          i3blocks xkb-switch alsa-lib libmpdclient jsoncpp \
           xfce4-settings flameshot gnome-keyring \
           compton feh xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit perl-file-mimeinfo \
