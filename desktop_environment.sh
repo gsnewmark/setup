@@ -60,3 +60,6 @@ sudo systemctl enable lightdm.service
 
 # install unclutter (hides mouse cursor)
 sudo pacman -S unclutter
+
+# install tray battery indicator
+sudo pacman -S cbatticon
