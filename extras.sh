@@ -51,3 +51,6 @@ sudo pacman -S android-file-transfer
 
 # install CLI lines of code counter
 sudo pacman -S cloc
+
+# install SSHFS
+sudo pacman -S sshfs
