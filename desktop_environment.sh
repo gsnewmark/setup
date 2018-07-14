@@ -53,10 +53,11 @@ sudo wget https://github.com/gsnewmark/numix-solarized-dark-gtk-theme/releases/d
 sudo unzip /usr/share/themes/NumixSolarizedDark.zip -d /usr/share/themes/
 sudo rm /usr/share/themes/NumixSolarizedDark.zip
 
-# install and enable lightdm
-sudo pacman -S lightdm lightdm-gtk-greeter
-sudo cp $HOME/setup/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
-sudo systemctl enable lightdm.service
+# install and enable sddm
+sudo pacman -S sddm
+trizen -S sddm-lain-wired-theme
+sudo cp $HOME/setup/sddm.conf /etc/sddm.conf
+sudo systemctl enable sddm.service
 
 # install unclutter (hides mouse cursor)
 sudo pacman -S unclutter
