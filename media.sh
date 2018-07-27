@@ -28,3 +28,6 @@ sudo pacman -S shntool cuetools
 
 # install tools to work with music tags
 sudo pacman -S easytag mp3unicode
+
+# install DLNA server for PulseAudio
+trizen -S pulseaudio-dlna
