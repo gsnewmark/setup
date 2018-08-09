@@ -24,9 +24,11 @@ sudo pacman -S clojure rlwrap
 # install sbt
 sudo pacman -S sbt
 
-# install Python's setuptools, pip, virtualenv
+# install Python's setuptools, pip, virtualenv, conda
 sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
      python-virtualenv python2-virtualenv python-virtualenvwrapper
+
+trizen -S python-conda
 
 # install Ruby
 sudo pacman -S ruby
