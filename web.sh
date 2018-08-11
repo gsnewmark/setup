@@ -35,9 +35,6 @@ cd $HOME
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
 
-# install Skype
-trizen -S skypeforlinux-stable-bin
-
 # install Slack client
 trizen -S slack-desktop
 
