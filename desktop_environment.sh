@@ -9,7 +9,7 @@ trizen -S i3-wm dunst rofi \
           udisks2 udiskie i3lock-wrapper bc polkit perl-file-mimeinfo \
           notify-desktop-git lib32-gtk2 gtk-engine-murrine \
           ttf-mplus ttf-iosevka-term \
-          ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
+          ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family otf-overpass \
           freetype2-cleartype fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install San Francisco font
