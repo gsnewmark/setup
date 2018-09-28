@@ -93,3 +93,6 @@ ExecStart=/home/gsnewmark/bin/pm lock
 WantedBy=sleep.target' | sudo tee /etc/systemd/system/lock@.service
 
 sudo systemctl enable lock@gsnewmark.service
+
+# install firmware update daemon
+sudo pacman -S fwupd
