@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # install i3 & various helpers & fonts & 32-bit GTK libs (for GTK themes support)
+gpg --recv-keys C1A60EACE707FDA5
 trizen -S i3-wm dunst rofi \
           i3blocks xkb-switch alsa-lib libmpdclient jsoncpp \
           xfce4-settings flameshot gnome-keyring \

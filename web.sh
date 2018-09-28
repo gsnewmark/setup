@@ -5,7 +5,7 @@ sudo pacman -S python-opengl qutebrowser
 
 # install Chromium, Firefox, Tor Browser
 sudo pacman -S chromium firefox
-gpg --keyserver pool.sks-keyservers.net --recv-keys D1483FA6C3C07136
+gpg --keyserver pool.sks-keyservers.net --recv-keys EB774491D9FF06E2
 trizen -S tor-browser-en
 
 # download old Firefox for Java applets
