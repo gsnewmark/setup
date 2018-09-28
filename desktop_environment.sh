@@ -9,7 +9,7 @@ trizen -S i3-wm dunst rofi \
           notify-desktop-git lib32-gtk2 gtk-engine-murrine \
           ttf-mplus ttf-iosevka-term \
           ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
-          freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
+          freetype2-cleartype fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install San Francisco font
 wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip -O YosemiteSanFranciscoFont-master.zip
