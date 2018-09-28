@@ -21,16 +21,6 @@ sudo pacman -S flashplugin
 
 # install email client
 sudo pacman -S thunderbird
-thunderbird &
-last_pid=$!
-kill -KILL $last_pid
-cd $HOME/.thunderbird/*.default
-wget https://github.com/spymastermatt/thunderbird-monterail/archive/master.zip
-unzip master.zip
-rm master.zip
-mv thunderbird-monterail-master chrome
-echo '@import "icons/lightIcons.css";' >> chrome/userChrome.css
-cd $HOME
 
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
