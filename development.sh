@@ -4,7 +4,6 @@
 sudo pacman -S jdk7-openjdk openjdk7-doc openjdk7-src \
      jdk8-openjdk openjdk8-doc openjdk8-src \
      maven visualvm
-trizen -S jdk
 sudo archlinux-java set java-8-openjdk
 
 # install MAT
