@@ -31,6 +31,10 @@ trizen -S slack-desktop
 # install Telegram
 sudo pacman -S telegram-desktop
 
+# install Discord
+gpg --recv-keys 0FC3042E345AD05D
+trizen -S discord
+
 # install Java browser plugin
 sudo pacman -S icedtea-web
 
