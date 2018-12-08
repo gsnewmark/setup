@@ -76,7 +76,7 @@ sudo pacman -S emacs vim
 
 # checkout and activate dotfiles
 cd $HOME
-git clone git@github.com:gsnewmark/dotfiles.git
+git clone git@gitlab.com:gsnewmark/dotfiles.git
 cd dotfiles
 git submodule init
 git submodule update
