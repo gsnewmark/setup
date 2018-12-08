@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # install video drivers
-sudo pacman -S xf86-video-intel lib32-mesa-libgl mesa-libgl libva-intel-driver nvidia bumblebee
+sudo pacman -S xf86-video-intel lib32-mesa-libgl mesa-libgl libva-intel-driver \
+               nvidia bumblebee
 
 # install X.Org server
 sudo pacman -S xorg-server xorg-xbacklight xorg-xinput xorg-xmodmap xorg-xrandr xorg-xset
