@@ -19,9 +19,13 @@ makepkg -si
 cd $HOME
 rm -rf $HOME/tmp/aur
 
-# install zsh and set it as default shell
-sudo pacman -S zsh
-chsh -s $(which zsh)
+# install fish and set it as default shell
+sudo pacman -S fish fzf
+chsh -s $(which fish)
+trizen -S fisher
+fisher add rafaelrinaldi/pure
+fisher add jethrokuan/fzf
+fisher add franciscolourenco/done
 
 # install python (for dotfiles bootstrap script)
 sudo pacman -S python python2

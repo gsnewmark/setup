@@ -26,6 +26,7 @@ sudo pacman -S sbt
 # install Python's setuptools, pip, virtualenv, conda
 sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
      python-virtualenv python2-virtualenv python-virtualenvwrapper
+trizen -S python-virtualfish
 
 trizen -S python-conda
 
