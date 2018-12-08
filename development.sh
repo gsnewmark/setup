@@ -80,11 +80,8 @@ rustup default stable
 rustup component add rust-src
 rustup component add rustfmt-preview
 
-# install Go & tools for building projects
-sudo pacman -S go
-trizen -S gb
-go get github.com/GeertJohan/go.rice
-go get github.com/GeertJohan/go.rice/rice
-
 # install gdb
 sudo pacman -S gdb
+
+# install CUDA
+sudo pacman -S cuda
