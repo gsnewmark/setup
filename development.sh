@@ -19,6 +19,7 @@ trizen -S boot
 
 # install Clojure
 sudo pacman -S clojure rlwrap
+trizen -S jocker
 
 # install sbt
 sudo pacman -S sbt
