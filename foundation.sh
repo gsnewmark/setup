@@ -32,7 +32,7 @@ sudo pacman -S python python2
 
 # install useful utils
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
-               tree unzip the_silver_searcher net-tools acpi reflector \
+               tree unzip the_silver_searcher ripgrep net-tools acpi reflector \
                terminus-font bind-tools lsof iftop
 
 # install ncurses 5 compatibility
