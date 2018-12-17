@@ -13,16 +13,6 @@ trizen -S i3-wm dunst rofi \
           adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts \
           freetype2-cleartype fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
-# install San Francisco font
-wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip -O YosemiteSanFranciscoFont-master.zip
-unzip YosemiteSanFranciscoFont-master.zip
-cd YosemiteSanFranciscoFont-master
-chmod 755 *.ttf
-mv *.ttf ~/.fonts/
-cd ..
-rm -rf YosemiteSanFranciscoFont-master*
-fc-cache -fv
-
 # install terminal emulator
 sudo pacman -S termite
 
