@@ -41,9 +41,9 @@ sudo systemctl enable NetworkManager.service
 
 # install themes, icons
 trizen -S faenza-icon-theme
-sudo wget https://github.com/gsnewmark/numix-solarized-dark-gtk-theme/releases/download/19082017/NumixSolarizedDark.zip -O /usr/share/themes/NumixSolarizedDark.zip
-sudo unzip /usr/share/themes/NumixSolarizedDark.zip -d /usr/share/themes/
-sudo rm /usr/share/themes/NumixSolarizedDark.zip
+THEME_FONT_FACE='Source Sans Pro' THEME_FONT_SIZE=12 trizen -S nordic-theme-git
+gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
+gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
 
 # install and enable sddm
 sudo pacman -S sddm
