@@ -80,7 +80,8 @@ sudo pacman -S erlang
 sudo pacman -S rustup rust-racer
 rustup default stable
 rustup component add rust-src
-rustup component add rustfmt-preview
+rustup component add rustfmt
+rustup component add clippy
 
 # install gdb
 sudo pacman -S gdb
