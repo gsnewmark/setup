@@ -31,3 +31,6 @@ sudo pacman -S easytag mp3unicode
 
 # install DLNA server for PulseAudio
 trizen -S pulseaudio-dlna
+
+# Install comix/manga reader
+sudo pacman -S mcomix mupdf-tools
