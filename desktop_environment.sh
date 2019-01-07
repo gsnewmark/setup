@@ -8,6 +8,7 @@ trizen -S i3-wm dunst rofi \
           compton feh xdotool \
           udisks2 udiskie i3lock-wrapper bc polkit perl-file-mimeinfo \
           notify-desktop-git lib32-gtk2 gtk-engine-murrine \
+          qt5-styleplugins \
           ttf-mplus ttf-iosevka-term \
           ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
           adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts \
