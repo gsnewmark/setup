@@ -54,3 +54,6 @@ sudo pacman -S cloc
 
 # install SSHFS
 sudo pacman -S sshfs
+
+# install screen recorder
+sudo pacman -S peek
