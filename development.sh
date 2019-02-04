@@ -83,6 +83,10 @@ rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
 
+# install Go & tools for building projects
+sudo pacman -S go go-tools
+trizen -S gb
+
 # install gdb
 sudo pacman -S gdb
 
