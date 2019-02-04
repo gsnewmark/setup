@@ -85,9 +85,10 @@ rustup component add clippy
 
 # install Go & tools for building & working with projects
 sudo pacman -S go go-tools
-trizen -S gb
 go get -u github.com/motemen/gore
 go get -u github.com/mdempsky/gocode
+go get github.com/GeertJohan/go.rice
+go get github.com/GeertJohan/go.rice/rice
 
 # install gdb
 sudo pacman -S gdb
