@@ -101,3 +101,6 @@ sudo systemctl enable lock@gsnewmark.service
 
 # install firmware update daemon
 sudo pacman -S fwupd
+
+# install util for Logitech controllers
+sudo pacman -S solaar
