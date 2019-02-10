@@ -34,3 +34,6 @@ trizen -S pulseaudio-dlna
 
 # Install comix/manga reader
 sudo pacman -S mcomix mupdf-tools
+
+# Install util for CLI Chromecast casting
+trizen -S mkchromecast python-pychromecast
