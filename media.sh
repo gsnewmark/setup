@@ -26,6 +26,9 @@ sudo pacman -S inkscape
 # install tools to split CD rips
 sudo pacman -S shntool cuetools
 
+# install additional audio codecs
+sudo pacman -S mac
+
 # install tools to work with music tags
 sudo pacman -S easytag mp3unicode
 
