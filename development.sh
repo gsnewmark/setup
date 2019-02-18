@@ -14,9 +14,6 @@ gpg --recv-keys 5A92E04305696D78
 gpg --lsign-key 5A92E04305696D78
 trizen -S leiningen
 
-# install Boot
-trizen -S boot
-
 # install Clojure
 sudo pacman -S clojure rlwrap
 trizen -S jocker
