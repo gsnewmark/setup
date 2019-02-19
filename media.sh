@@ -40,3 +40,6 @@ sudo pacman -S mcomix mupdf-tools
 
 # Install util for CLI Chromecast casting
 trizen -S mkchromecast python-pychromecast
+
+# Install sound recorder
+trizen -S audio-recorder
