@@ -35,8 +35,7 @@ sudo pacman -S ruby
 trizen -S ruby-sass
 
 # install Haskell and some packages
-sudo pacman -S cabal-install ghc happy alex stack \
-     stylish-haskell hasktags ghc-mod hlint
+sudo pacman -S cabal-install ghc happy alex stack ghc-mod hlint
 
 # install Idris
 sudo pacman -S idris
