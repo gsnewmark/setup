@@ -11,6 +11,16 @@ trizen -S mpdas
 cp /etc/mpdasrc $HOME/.mpdasrc
 echo "Don't forget to update the mpdas scrobbler config manually"
 
+echo '/home/gsnewmark/.config/mpd/*.log {
+	weekly
+	missingok
+	rotate 7
+	compress
+	notifempty
+	copytruncate
+	create 600
+}' | sudo tee /etc/logrotate.d/mpd
+
 # install Calibre
 sudo pacman -S calibre
 
