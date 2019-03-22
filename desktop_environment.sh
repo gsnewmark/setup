@@ -12,7 +12,7 @@ trizen -S i3-wm dunst rofi \
           ttf-mplus ttf-iosevka-term \
           ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
           adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts \
-          freetype2-cleartype fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
+          freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install terminal emulator
 sudo pacman -S termite
