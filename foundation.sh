@@ -10,11 +10,11 @@ sudo pacman -S xorg-server xorg-xbacklight xorg-xinput xorg-xmodmap xorg-xrandr 
 # install some libs
 sudo pacman -S base-devel zlib openssl aspell-uk aspell-en
 
-# install trizen
+# install yay
 mkdir -p $HOME/tmp/aur
 cd $HOME/tmp/aur
-git clone https://aur.archlinux.org/trizen.git
-cd trizen
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
 cd $HOME
 rm -rf $HOME/tmp/aur
@@ -22,7 +22,7 @@ rm -rf $HOME/tmp/aur
 # install fish and set it as default shell
 sudo pacman -S fish fzf
 chsh -s $(which fish)
-trizen -S fisher
+yay -S fisher
 fisher add rafaelrinaldi/pure
 fisher add jethrokuan/fzf
 fisher add franciscolourenco/done
@@ -37,7 +37,7 @@ sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
 
 # install ncurses 5 compatibility
 gpg --recv-keys 702353E0F7E48EDB
-trizen -S ncurses5-compat-libs
+yay -S ncurses5-compat-libs
 
 # Enable reflector periodic job
 echo '[Unit]

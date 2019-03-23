@@ -7,7 +7,7 @@ sudo pacman -S mpv youtube-dl
 sudo pacman -S mpd mpc ncmpcpp
 mkdir -p $HOME/.mpd/playlists
 touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
-trizen -S mpdas
+yay -S mpdas
 cp /etc/mpdasrc $HOME/.mpdasrc
 echo "Don't forget to update the mpdas scrobbler config manually"
 
@@ -43,13 +43,13 @@ sudo pacman -S mac
 sudo pacman -S easytag mp3unicode
 
 # install DLNA server for PulseAudio
-trizen -S pulseaudio-dlna
+yay -S pulseaudio-dlna
 
 # Install comix/manga reader
 sudo pacman -S mcomix mupdf-tools
 
 # Install util for CLI Chromecast casting
-trizen -S mkchromecast python-pychromecast
+yay -S mkchromecast python-pychromecast
 
 # Install sound recorder
-trizen -S audio-recorder
+yay -S audio-recorder
