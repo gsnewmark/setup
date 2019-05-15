@@ -40,7 +40,7 @@ sudo pacman -S shntool cuetools
 sudo pacman -S mac
 
 # install tools to work with music tags
-sudo pacman -S easytag mp3unicode
+sudo pacman -S mp3unicode phonon-qt5-gstreamer kid3
 
 # install DLNA server for PulseAudio
 yay -S pulseaudio-dlna
