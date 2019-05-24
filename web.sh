@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# install qutebrowser and make it default browser
-sudo pacman -S python-opengl qutebrowser
-
-# install Chromium, Firefox, Tor Browser
+# install Chromium, Tor Browser
 sudo pacman -S chromium firefox
 gpg --keyserver pool.sks-keyservers.net --recv-keys EB774491D9FF06E2
 yay -S tor-browser-en
+
+# install Firefox with Tridactyl
+sudo pacman -S firefox firefox-tridactyl
+curl -fsSl https://raw.githubusercontent.com/tridactyl/tridactyl/master/native/install.sh | bash
 
 # download old Firefox for Java applets
 mkdir -p $HOME/opt/
