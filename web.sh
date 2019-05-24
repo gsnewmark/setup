@@ -35,6 +35,9 @@ sudo pacman -S telegram-desktop
 gpg --recv-keys 0FC3042E345AD05D
 yay -S discord
 
+# install Skype
+yay -S skypeforlinux-stable-bin
+
 # install Java browser plugin
 sudo pacman -S icedtea-web
 
