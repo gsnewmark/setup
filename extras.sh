@@ -57,3 +57,6 @@ sudo pacman -S sshfs
 
 # install screen recorder
 sudo pacman -S peek
+
+# install proselint
+sudo pacman -S proselint
