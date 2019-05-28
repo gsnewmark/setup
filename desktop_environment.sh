@@ -41,7 +41,10 @@ sudo pacman -S networkmanager network-manager-applet
 sudo systemctl enable NetworkManager.service
 
 # install themes, icons
-yay -S faenza-icon-theme
+sudo pacman -S papirus-icon-theme
+yay -S hardcode-tray-git
+sudo -E hardcode-tray --conversion-tool RSVGConvert --size 22 --theme Papirus-Dark
+
 THEME_FONT_FACE='Source Sans Pro' THEME_FONT_SIZE=12 yay -S nordic-theme-git
 gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
 gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
