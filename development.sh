@@ -77,6 +77,7 @@ rustup default stable
 rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
+yay -S cargo-outdated
 
 # install Go & tools for building & working with projects
 sudo pacman -S go go-tools
