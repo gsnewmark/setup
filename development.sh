@@ -25,7 +25,6 @@ sudo pacman -S sbt
 sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip, pyenv \
      python-virtualenv python2-virtualenv python-virtualenvwrapper python-pipenv \
      python-black
-yay -S python-virtualfish
 
 yay -S python-conda
 
