@@ -21,8 +21,8 @@ yay -S jocker
 # install sbt
 sudo pacman -S sbt
 
-# install Python's setuptools, pip, pip-env, virtualenv, conda, formatter
-sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip \
+# install Python's setuptools, pip, pyenv, pip-env, virtualenv, conda, formatter
+sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip, pyenv \
      python-virtualenv python2-virtualenv python-virtualenvwrapper python-pipenv \
      python-black
 yay -S python-virtualfish
