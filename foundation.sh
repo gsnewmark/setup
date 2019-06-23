@@ -33,10 +33,6 @@ sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
                terminus-font bind-tools lsof iftop pacman-contrib time iotop \
                fd bat exa
 
-# install ncurses 5 compatibility
-gpg --recv-keys 702353E0F7E48EDB
-yay -S ncurses5-compat-libs
-
 # Enable reflector periodic job
 echo '[Unit]
 Description=Pacman mirrorlist update
