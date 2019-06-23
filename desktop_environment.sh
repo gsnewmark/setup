@@ -18,7 +18,7 @@ yay -S i3-wm dunst rofi \
 sudo pacman -S termite
 
 # install archivers
-sudo pacman -S file-roller p7zip
+sudo pacman -S file-roller p7zip zip
 
 # install GUI text editor
 sudo pacman -S gedit
