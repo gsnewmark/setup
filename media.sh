@@ -27,8 +27,8 @@ sudo pacman -S calibre
 # install Rockbox Utility
 sudo pacman -S rbutil
 
-# install GIMP
-sudo pacman -S gimp
+# install Krita
+sudo pacman -S krita
 
 # install vector graphics editor
 sudo pacman -S inkscape
