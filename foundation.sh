@@ -23,12 +23,9 @@ rm -rf $HOME/tmp/aur
 sudo pacman -S fish fzf
 chsh -s $(which fish)
 yay -S fisher
-fisher add rafaelrinaldi/pure
-fisher add jethrokuan/fzf
-fisher add franciscolourenco/done
 
-# install python (for dotfiles bootstrap script)
-sudo pacman -S python python2
+# install stow (for dotfiles bootstrap)
+sudo pacman -S stow
 
 # install useful utils
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
@@ -77,11 +74,15 @@ sudo pacman -S emacs vim
 
 # checkout and activate dotfiles
 cd $HOME
-git clone git@gitlab.com:gsnewmark/dotfiles.git
+git clone --recursive git@gitlab.com:gsnewmark/dotfiles.git
 cd dotfiles
-git submodule init
-git submodule update
-./bootstrap
+stow foundation
+stow desktop_environment
+stow development
+stow web
+stow media
+stow extras
+fisher
 cd ../setup
 
 # Enable lock on suspend

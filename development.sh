@@ -21,10 +21,10 @@ yay -S jocker
 # install sbt
 sudo pacman -S sbt
 
-# install Python's setuptools, pip, pyenv, pip-env, virtualenv, conda, formatter, tk
+# install Python (setuptools, pip, pyenv, pip-env, virtualenv, conda, formatter, tk)
 sudo pacman -S python-setuptools python2-setuptools python-pip python2-pip, pyenv \
                python-virtualenv python2-virtualenv python-virtualenvwrapper python-pipenv \
-               python-black tk
+               python-black tk python python2
 
 yay -S python-conda
 
