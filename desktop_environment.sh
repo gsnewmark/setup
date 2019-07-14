@@ -10,9 +10,12 @@ yay -S i3-wm dunst rofi \
        notify-desktop-git lib32-gtk2 gtk-engine-murrine \
        qt5-styleplugins \
        ttf-mplus ttf-iosevka-term \
-       ttf-symbola ttf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
+       ttf-symbola otf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
        adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts \
        freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
+
+# install sway & related utils
+sudo pacman -S sway swayidle swaylock waybar wallutils grim qt5-wayland xorg-server-xwayland xorg-xeyes
 
 # install terminal emulator
 sudo pacman -S termite
