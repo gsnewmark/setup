@@ -24,6 +24,9 @@ echo '/home/gsnewmark/.config/mpd/*.log {
 # install Calibre
 sudo pacman -S calibre
 
+# install eBook reader
+yay -S foliate
+
 # install Rockbox Utility
 sudo pacman -S rbutil
 
