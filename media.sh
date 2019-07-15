@@ -26,6 +26,7 @@ sudo pacman -S calibre
 
 # install eBook reader
 yay -S foliate
+xdg-mime default com.github.johnfactotum.Foliate.desktop application/epub+zip
 
 # install Rockbox Utility
 sudo pacman -S rbutil
