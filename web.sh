@@ -65,3 +65,6 @@ sudo pacman -S mitmproxy
 
 # install Zoom client
 yay -S zoom
+
+# install nmap
+sudo pacman -S nmap
