@@ -72,7 +72,7 @@ yay -S veracrypt
 sudo pacman -S erlang
 
 # install Rust
-sudo pacman -S rustup rust-racer
+sudo pacman -S rustup rust-racer musl
 rustup default stable
 rustup component add rust-src
 rustup component add rustfmt
