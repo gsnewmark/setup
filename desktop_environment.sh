@@ -9,9 +9,9 @@ yay -S i3-wm dunst rofi \
        udisks2 udiskie i3lock-wrapper bc polkit perl-file-mimeinfo \
        notify-desktop-git lib32-gtk2 gtk-engine-murrine \
        qt5-styleplugins \
-       ttf-mplus ttf-iosevka-term \
+       ttf-iosevka-term-ss05 \
+       adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts adobe-source-han-sans-classic-fonts \
        ttf-symbola otf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
-       adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts \
        freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 
 # install sway & related utils
