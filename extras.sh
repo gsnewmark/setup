@@ -20,6 +20,7 @@ sudo pacman -S gnome-disk-utility
 
 # install Libre office
 sudo pacman -S libreoffice-fresh libreoffice-fresh-en-GB libreoffice-fresh-uk
+xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
 
 # install TexLive
 sudo pacman -S texlive-most texlive-lang
