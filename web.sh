@@ -9,14 +9,6 @@ yay -S tor-browser-en
 sudo pacman -S firefox firefox-tridactyl
 curl -fsSl https://raw.githubusercontent.com/tridactyl/tridactyl/master/native/install.sh | bash
 
-# download old Firefox for Java applets
-mkdir -p $HOME/opt/
-cd $HOME/opt/
-wget https://ftp.mozilla.org/pub/firefox/releases/42.0/linux-x86_64/en-US/firefox-42.0.tar.bz2
-tar jxf firefox-42.0.tar.bz2
-rm firefox-42.0.tar.bz2
-cd $HOME
-
 # install flash plugin
 sudo pacman -S flashplugin
 
