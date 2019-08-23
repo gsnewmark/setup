@@ -61,3 +61,10 @@ sudo pacman -S peek
 
 # install proselint
 sudo pacman -S proselint
+
+# install tool for Discord Reach Presence for PSN
+cd $HOME/opt/
+git clone git@github.com:Tustin/PlayStationDiscord.git
+cd PlayStationDiscord
+npm install
+cd $HOME
