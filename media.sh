@@ -57,3 +57,6 @@ yay -S mkchromecast python-pychromecast
 
 # Install sound recorder
 yay -S audio-recorder
+
+# Install research papers organizer
+yay -S zotero
