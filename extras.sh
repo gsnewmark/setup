@@ -68,3 +68,6 @@ git clone git@github.com:Tustin/PlayStationDiscord.git
 cd PlayStationDiscord
 npm install
 cd $HOME
+
+# install Wine
+sudo pacman -S wine-staging
