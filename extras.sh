@@ -69,5 +69,7 @@ cd PlayStationDiscord
 npm install
 cd $HOME
 
-# install Wine
+# install Wine & DXVK
 sudo pacman -S wine-staging
+yay -S dxvk-bin
+setup_dxvk install
