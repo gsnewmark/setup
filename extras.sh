@@ -24,6 +24,7 @@ xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-offic
 
 # install TexLive
 sudo pacman -S texlive-most texlive-lang
+yay -S texlive-latexindent-meta
 
 # install Steam
 gpg --keyserver pgp.mit.edu --recv-keys FCF986EA15E6E293A5644F10B4322F04D67658D8
