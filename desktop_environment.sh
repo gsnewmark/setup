@@ -6,7 +6,7 @@ yay -S i3-wm dunst rofi \
        i3blocks xkb-switch alsa-lib libmpdclient jsoncpp \
        xfce4-settings flameshot gnome-keyring \
        compton feh xdotool \
-       udisks2 udiskie i3lock-wrapper bc polkit perl-file-mimeinfo \
+       udisks2 udiskie betterlockscreen bc polkit perl-file-mimeinfo \
        notify-desktop-git lib32-gtk2 gtk-engine-murrine \
        qt5-styleplugins \
        ttf-iosevka-term-ss05 \
