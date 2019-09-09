@@ -13,6 +13,7 @@ yay -S i3-wm dunst rofi \
        adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts adobe-source-han-sans-classic-fonts \
        ttf-symbola otf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
        freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
+betterlockscreen -u ~/Dropbox/Pictures/wallpapers/
 
 # install sway & related utils
 sudo pacman -S sway swayidle swaylock waybar wallutils grim qt5-wayland xorg-server-xwayland xorg-xeyes
