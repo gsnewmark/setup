@@ -64,3 +64,6 @@ yay -S zotero
 # Install virtual synthesizers
 sudo pacman -S helm
 yay -S vcvrack-bin
+
+# Install DAW
+sudo pacman -S ardour
