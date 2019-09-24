@@ -61,5 +61,6 @@ yay -S audio-recorder
 # Install research papers organizer
 yay -S zotero
 
-# Install virtual modular synthesizer
+# Install virtual synthesizers
+sudo pacman -S helm
 yay -S vcvrack-bin
