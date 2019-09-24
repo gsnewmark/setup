@@ -60,3 +60,6 @@ yay -S audio-recorder
 
 # Install research papers organizer
 yay -S zotero
+
+# Install virtual modular synthesizer
+yay -S vcvrack-bin
