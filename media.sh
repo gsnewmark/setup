@@ -65,5 +65,5 @@ yay -S zotero
 sudo pacman -S helm
 yay -S vcvrack-bin
 
-# Install DAW
-sudo pacman -S lmms
+# Install DAWs
+sudo pacman -S ardour lmms
