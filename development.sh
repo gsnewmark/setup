@@ -78,6 +78,8 @@ rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
 yay -S cargo-outdated
+cargo install cargo-check
+cargo install cargo-edit
 
 # install Go & tools for building & working with projects
 sudo pacman -S go go-tools
