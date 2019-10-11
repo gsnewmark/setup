@@ -77,7 +77,7 @@ rustup default stable
 rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
-yay -S cargo-outdated
+yay -S cargo-outdated cargo-audit
 cargo install cargo-check
 cargo install cargo-edit
 
