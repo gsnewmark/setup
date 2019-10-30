@@ -33,6 +33,7 @@ sudo pacman -S stow
 sudo pacman -S htop curl wget httpie xterm links xclip tmux lm_sensors rsync \
                tree unzip the_silver_searcher ripgrep net-tools acpi reflector \
                terminus-font bind-tools lsof iftop pacman-contrib time iotop \
+               systemd-resolvconf \
                fd bat exa
 
 # Enable reflector periodic job
