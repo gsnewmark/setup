@@ -9,7 +9,7 @@ yay -S i3-wm dunst rofi \
        udisks2 udiskie betterlockscreen bc polkit perl-file-mimeinfo \
        notify-desktop-git lib32-gtk2 gtk-engine-murrine \
        qt5-styleplugins \
-       ttf-fantasque-sans-mono \
+       ttf-mplus \
        adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts adobe-source-han-sans-classic-fonts \
        ttf-symbola otf-font-awesome ttf-ms-fonts ttf-ubuntu-font-family \
        freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
