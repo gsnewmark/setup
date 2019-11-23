@@ -5,7 +5,7 @@ gpg --recv-keys C1A60EACE707FDA5
 yay -S i3-wm dunst rofi \
        i3blocks i3blocks-contrib xkb-switch alsa-lib libmpdclient jsoncpp \
        xfce4-settings flameshot gnome-keyring \
-       compton feh xdotool \
+       picom feh xdotool \
        udisks2 udiskie betterlockscreen bc polkit perl-file-mimeinfo \
        notify-desktop-git lib32-gtk2 gtk-engine-murrine \
        qt5-styleplugins \
