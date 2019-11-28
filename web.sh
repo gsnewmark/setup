@@ -12,8 +12,9 @@ curl -fsSl https://raw.githubusercontent.com/tridactyl/tridactyl/master/native/i
 # install flash plugin
 sudo pacman -S flashplugin
 
-# install email client
+# install email client & bridge for ProtonMail
 sudo pacman -S thunderbird
+yay -S protonmail-bridge 
 
 # install Transmission
 sudo pacman -S transmission-gtk transmission-cli
