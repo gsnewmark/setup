@@ -47,9 +47,6 @@ sudo pacman -S networkmanager-vpnc networkmanager-openvpn
 # install Remmina remote desktop client
 sudo pacman -S remmina
 
-# install Keybase CLI util
-sudo pacman -S keybase
-
 # install S3 CLI util
 sudo pacman -S s3cmd
 
