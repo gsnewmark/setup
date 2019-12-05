@@ -93,3 +93,6 @@ sudo pacman -S gdb
 
 # install CUDA
 sudo pacman -S cuda
+
+# Install AWS CLI
+sudo pacman -S aws-cli
