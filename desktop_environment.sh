@@ -15,6 +15,11 @@ yay -S i3-wm dunst rofi \
        freetype2 fontconfig cairo lib32-fontconfig lib32-freetype2 lib32-cairo
 betterlockscreen -u ~/Dropbox/Pictures/wallpapers/
 
+# install Gnome & Material Shell
+yay -S gnome-shell gnome-shell-extension-material-shell-git gnome-tweaks gnome-screensaver nautilus nautilus-dropbox
+gnome-shell-extension-tool -e material-shell@papyelgringo
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+
 # install sway & related utils
 sudo pacman -S sway swayidle swaylock waybar wallutils grim qt5-wayland xorg-server-xwayland xorg-xeyes
 
