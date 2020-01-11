@@ -74,3 +74,6 @@ cd $HOME
 sudo pacman -S wine-staging
 yay -S dxvk-bin
 setup_dxvk install
+
+# install languagetool
+sudo pacman -S languagetool
